@@ -1,0 +1,5 @@
+subconverter/subconverter-linux-amd
+clash/clash-linux-amd
+__pycache__/
+*.pyc
+workflow.log
