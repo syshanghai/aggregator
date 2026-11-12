@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 import re
 import sys
 import urllib.parse
@@ -32,6 +33,11 @@ def extract_subscribes(
     result = ChannelResult()
     if not content:
         return result
+
+    # Telegram / web pages serve HTML-escaped URLs (&amp; etc.). Unescape
+    # first, otherwise node links are truncated at the first "&amp;" and
+    # fail validation downstream (e.g. vless://...?encryption=...&amp).
+    content = html.unescape(content)
 
     push_to = list(push_to or [])
     task = task or TaskParams(push_to=push_to)
