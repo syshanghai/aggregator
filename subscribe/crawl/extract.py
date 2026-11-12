@@ -130,7 +130,10 @@ def extract_subscribes(
             try:
                 groups = re.findall(PROTOCOL_REGEX, content, flags=re.I)
                 if groups:
-                    uris.extend([x.lower().strip() for x in groups if x])
+                    # NOTE: do NOT lowercase the links: vmess/vless/ss payloads
+                    # (base64 keys, REALITY public keys, ML-KEM keys) are
+                    # case-sensitive and lowercasing corrupts them.
+                    uris.extend([x.strip() for x in groups if x])
             except Exception:
                 logger.error("[ExtractError] failed to extract single proxy")
 
