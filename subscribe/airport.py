@@ -778,8 +778,16 @@ class AirPort:
         if not text:
             return []
 
+        # Local VLESS parsing: SubConverter has no VLESS support, so pull
+        # vless:// links out of the text and parse them here; the remainder
+        # keeps going through the SubConverter path below. Works for plain
+        # link lists and for base64 subscriptions that decode to link lists.
+        text, local_nodes = AirPort._extract_local_vless(text)
+        if not text and not local_nodes:
+            return []
+
         is_b64encode, is_json, is_yaml = False, False, False
-        if (
+        if text and (
             use_subconverter
             or (is_b64encode := utils.isb64encode(text))
             or (is_json := (text.startswith("{") and text.endswith("}")))
@@ -826,7 +834,7 @@ class AirPort:
             if not success:
                 logger.error("cannot generate subconverter config file")
                 os.remove(v2ray_file)
-                return []
+                return local_nodes
 
             time.sleep(random.random())
             success = subconverter.convert(binname=program, artifact=artifact)
@@ -834,7 +842,7 @@ class AirPort:
 
             os.remove(v2ray_file)
             if not success:
-                return []
+                return local_nodes
 
             document = ""
             try:
@@ -847,11 +855,51 @@ class AirPort:
         else:
             nodes = load_nodes(text)
 
+        nodes.extend(local_nodes)
+
         if not nodes:
             return []
         if do_verify:
             return [x for x in nodes if verify(x, special)]
         return nodes
+
+    @staticmethod
+    def _extract_local_vless(text: str) -> tuple[str, list[dict[str, object]]]:
+        """Split vless:// links out of text and parse them locally.
+
+        Returns (remaining_text, parsed_proxy_dicts). Plain link lists are
+        split by line; base64 subscriptions are decoded first and the
+        remainder is re-encoded so the SubConverter path below still works.
+        YAML/JSON configs pass through untouched.
+        """
+        from vless_link import parse_vless_uri
+
+        def split_lines(content: str) -> tuple[str, list[dict[str, object]]]:
+            kept: list[str] = []
+            parsed: list[dict[str, object]] = []
+            for line in content.split("\n"):
+                stripped = utils.trim(line)
+                if stripped.lower().startswith("vless://"):
+                    item = parse_vless_uri(stripped)
+                    if item is not None:
+                        parsed.append(item)
+                    continue
+                kept.append(line)
+            return "\n".join(kept), parsed
+
+        if utils.isb64encode(text):
+            try:
+                decoded = base64.b64decode(text).decode(encoding="UTF8")
+            except Exception:
+                return text, []
+            if "vless://" not in decoded.lower():
+                return text, []
+            remaining, parsed = split_lines(decoded)
+            if not utils.trim(remaining):
+                return "", parsed
+            return base64.b64encode(remaining.encode(encoding="UTF8")).decode(encoding="UTF8"), parsed
+
+        return split_lines(text)
 
     @staticmethod
     def enable_special_protocols(enabled: bool | None = None) -> bool:
