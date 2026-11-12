@@ -26,6 +26,7 @@ from logger import logger
 from workflow import TaskConfig
 
 import clash
+import localconvert
 import subconverter
 
 PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
@@ -189,6 +190,11 @@ def aggregate(args: argparse.Namespace) -> None:
     if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
         os.remove(generate_conf)
 
+    # NOTE: the final files are built locally (localconvert) instead of via
+    # SubConverter, which cannot parse VLESS proxies at all. generate.ini is
+    # still needed by AirPort.decode for non-VLESS subscriptions, so the
+    # stale-file cleanup above stays.
+
     logger.info(f"start fetch all subscriptions, count: [{len(tasks)}]")
     results = utils.multi_process_run(func=workflow.executewrapper, tasks=tasks)
 
@@ -242,8 +248,6 @@ def aggregate(args: argparse.Namespace) -> None:
         group = process_config.groups.get(k)
         if not group:
             continue
-        emoji = group.emoji
-        list_only = group.list_only
 
         if group.regularize and group.regularize.enable:
             nochecks = location.regularize(
@@ -257,64 +261,43 @@ def aggregate(args: argparse.Namespace) -> None:
                 score=group.regularize.score,
             )
 
-        source_file, data = "config.yaml", {"proxies": nochecks}
-        filepath = os.path.join(PATH, "subconverter", source_file)
-        with open(filepath, "w+", encoding="utf8") as f:
-            yaml.add_representer(clash.QuotedStr, clash.quoted_scalar)
-            yaml.dump(data, f, allow_unicode=True)
+        # Final proxy list, shared by all targets so names stay consistent
+        # across clash.yaml / singbox.json / v2ray.txt. filter_proxies also
+        # dedupes by endpoint and renames duplicate names.
+        final_config = clash.filter_proxies([dict(p) for p in nochecks])
+        final_proxies = final_config.get("proxies", [])
 
         targets = group.targets
         for target, storage_name in targets.items():
             persisted, content = False, " "
 
-            # convert
-            artifact = f"convert_{target}"
+            # Build the target file locally (localconvert): SubConverter
+            # cannot convert VLESS proxies, so routing through it would
+            # silently drop them from every output file.
             dest_file = subconverter.get_filename(target=target)
-
-            if os.path.exists(generate_conf) and os.path.isfile(generate_conf):
-                os.remove(generate_conf)
-
-            success = subconverter.generate_conf(
-                filepath=generate_conf,
-                name=artifact,
-                source=source_file,
-                dest=dest_file,
-                target=target,
-                emoji=emoji,
-                list_only=list_only,
-            )
-            if not success:
-                logger.error(f"cannot generate subconverter config file, group: {k}, target: {target}")
+            if not dest_file:
+                logger.error(f"unsupported convert target: {target}, group: {k}")
+                continue
+            content = localconvert.build_target_content(target, final_config, final_proxies)
+            if not content:
+                logger.error(f"cannot build content, group: {k}, target: {target}")
                 continue
 
-            if subconverter.convert(binname=subconverter_bin, artifact=artifact):
-                filepath = os.path.join(PATH, "subconverter", dest_file)
-
-                if not os.path.exists(filepath) or not os.path.isfile(filepath):
-                    logger.error(f"converted file {filepath} not found, group: {k}, target: {target}")
+            mixed = target == "v2ray" or target == "mixed" or "ss" in target
+            if mixed and not utils.isb64encode(content=content):
+                # base64 encode
+                try:
+                    content = base64.b64encode(content.encode(encoding="UTF8")).decode(encoding="UTF8")
+                except Exception as e:
+                    logger.error(f"base64 encode error, group: {k}, target: {target}, message: {str(e)}")
                     continue
 
-                with open(filepath, "r", encoding="utf8") as f:
-                    content = f.read()
-
-                mixed = target == "v2ray" or target == "mixed" or "ss" in target
-                if mixed and not utils.isb64encode(content=content):
-                    # base64 encode
-                    try:
-                        content = base64.b64encode(content.encode(encoding="UTF8")).decode(encoding="UTF8")
-                    except Exception as e:
-                        logger.error(f"base64 encode error, group: {k}, target: {target}, message: {str(e)}")
-                        continue
-
-                # save to remote server
-                persisted = pushtool.push_to(
-                    content=content,
-                    item=process_config.storage.items.get(storage_name, StorageItem()),
-                    group=f"{k}::{target}",
-                )
-
-            # clean workspace
-            workflow.cleanup(os.path.join(PATH, "subconverter"), [dest_file, "generate.ini"])
+            # save to remote server
+            persisted = pushtool.push_to(
+                content=content,
+                item=process_config.storage.items.get(storage_name, StorageItem()),
+                group=f"{k}::{target}",
+            )
 
             if content and not persisted:
                 filename = os.path.join(PATH, "data", f"{k}-{dest_file}")
@@ -322,7 +305,6 @@ def aggregate(args: argparse.Namespace) -> None:
                 logger.error(f"storage config to remote failed, group: {k}, target: {target}, save it to {filename}")
                 utils.write_file(filename=filename, lines=content)
 
-        workflow.cleanup(os.path.join(PATH, "subconverter"), [source_file])
         cost = "{:.2f}s".format(time.time() - starttime)
         logger.info(f"group [{k}] process finished, count: {len(nochecks)}, cost: {cost}")
 
