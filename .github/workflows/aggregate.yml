@@ -35,9 +35,7 @@ jobs:
           curl -sSL -o /tmp/mihomo.gz "$MIHOMO_URL"
           gunzip -c /tmp/mihomo.gz > clash/clash-linux-amd
           chmod +x clash/clash-linux-amd
-          ./subconverter/subconverter-linux-amd --version || true
-          ./clash/clash-linux-amd -v || true
-
+          
       - name: Run aggregator
         env:
           PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
