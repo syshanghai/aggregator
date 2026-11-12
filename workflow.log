@@ -27,3 +27,16 @@
 2026-11-12 14:28:40 workflow.py [line:61] INFO: start fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]
 2026-11-12 14:28:40 workflow.py [line:95] INFO: finished fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]	count=[8]
 2026-11-12 14:28:40 utils.py [line:580] INFO: [Concurrent] multi-process concurrent execute [executewrapper] finished, count: 1, cost: 0.04s
+2026-11-12 14:37:50 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_telegram_pages] finished, count: 1, cost: 0.82s
+2026-11-12 14:37:51 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_crawl_telegram_page] finished, count: 3, cost: 0.96s
+2026-11-12 14:37:51 telegram.py [line:45] INFO: [TelegramCrawl] finished crawl from Telegram, found 0 subscriptions, cost: 1.78s
+2026-11-12 14:37:51 engine.py [line:276] INFO: [CrawlInfo] crawl finished, found 1 sites
+2026-11-12 14:37:51 process.py [line:198] INFO: start fetch all subscriptions, count: [1]
+2026-11-12 14:37:51 workflow.py [line:61] INFO: start fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]
+2026-11-12 14:37:51 workflow.py [line:95] INFO: finished fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]	count=[8]
+2026-11-12 14:37:51 utils.py [line:580] INFO: [Concurrent] multi-process concurrent execute [executewrapper] finished, count: 1, cost: 0.07s
+2026-11-12 14:37:51 pipeline.py [line:173] INFO: startup clash now, workspace: /home/runner/work/aggregator/aggregator/clash, config: config.yaml
+2026-11-12 14:37:51 pipeline.py [line:175] INFO: clash start success, begin check proxies, group: free	count: 4
+2026-11-12 14:37:58 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [check] finished, count: 4, cost: 0.25s
+2026-11-12 14:37:58 pipeline.py [line:188] INFO: proxies check finished, total: 4, alive: 0, dead: 4
+2026-11-12 14:37:58 process.py [line:245] ERROR: cannot fetch any proxy, group=[free], cost: 6.25s

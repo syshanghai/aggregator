@@ -1,0 +1,79 @@
+external-controller: 127.0.0.1:9090
+log-level: silent
+mixed-port: 7890
+mode: Rule
+proxies:
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: ZIBANABZ-1B
+  network: tcp
+  port: 3939
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: "d9a2600fdecd7be2"
+  server: zibanabz.jonsonvip.ir
+  servername: ai.android
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
+- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
+  liveness: true
+  name: 8080-1A
+  network: tcp
+  port: 8080
+  server: zibanabz.jonsonvip.ir
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 032c5a4d-0e1b-4077-89ad-129386180d2c
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: ZIBANABZ-1A
+  network: tcp
+  port: 3939
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: "d9a2600fdecd7be2"
+  server: zibanabz.jonsonvip.ir
+  servername: ai.android
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 032c5a4d-0e1b-4077-89ad-129386180d2c
+- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
+  liveness: true
+  name: 8080-1B
+  network: tcp
+  port: 8080
+  server: zibanabz.jonsonvip.ir
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
+proxy-groups:
+- interval: 300
+  name: automatic
+  proxies:
+  - 8080-1A
+  - ZIBANABZ-1A
+  - ZIBANABZ-1B
+  - 8080-1B
+  type: url-test
+  url: https://www.google.com/favicon.ico
+- name: 🌐 Proxy
+  proxies:
+  - automatic
+  - 8080-1A
+  - ZIBANABZ-1A
+  - ZIBANABZ-1B
+  - 8080-1B
+  type: select
+rules:
+- MATCH,🌐 Proxy
