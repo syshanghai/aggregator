@@ -26,8 +26,8 @@ jobs:
       # GitHub API file push, so fetch the official linux-amd64 builds here.
       - name: Fetch runtime binaries
         run: |
-          mkdir -p subconverter clash
-          curl -sSL -o /tmp/sub.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
+          mkdir -p subconverter clash /tmp/sub
+          curl -fsSL -o /tmp/sub.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
           tar -xzf /tmp/sub.tar.gz -C /tmp/sub
           cp /tmp/sub/subconverter/subconverter subconverter/subconverter-linux-amd
           chmod +x subconverter/subconverter-linux-amd
