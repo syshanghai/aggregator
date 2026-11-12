@@ -19,3 +19,11 @@
 2026-11-12 13:38:23 airport.py [line:833] INFO: subconverter completed, artifact: [crawled-nodes-f16-uri]	success=[False]
 2026-11-12 13:38:23 workflow.py [line:95] INFO: finished fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]	count=[0]
 2026-11-12 13:38:23 utils.py [line:580] INFO: [Concurrent] multi-process concurrent execute [executewrapper] finished, count: 1, cost: 0.19s
+2026-11-12 14:28:38 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_telegram_pages] finished, count: 1, cost: 0.87s
+2026-11-12 14:28:40 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_crawl_telegram_page] finished, count: 3, cost: 1.03s
+2026-11-12 14:28:40 telegram.py [line:45] INFO: [TelegramCrawl] finished crawl from Telegram, found 0 subscriptions, cost: 1.90s
+2026-11-12 14:28:40 engine.py [line:276] INFO: [CrawlInfo] crawl finished, found 1 sites
+2026-11-12 14:28:40 process.py [line:198] INFO: start fetch all subscriptions, count: [1]
+2026-11-12 14:28:40 workflow.py [line:61] INFO: start fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]
+2026-11-12 14:28:40 workflow.py [line:95] INFO: finished fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]	count=[8]
+2026-11-12 14:28:40 utils.py [line:580] INFO: [Concurrent] multi-process concurrent execute [executewrapper] finished, count: 1, cost: 0.04s
