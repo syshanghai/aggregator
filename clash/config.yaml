@@ -3,1083 +3,54 @@ log-level: silent
 mixed-port: 7890
 mode: Rule
 proxies:
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: VLESS-92.223.124.62 443
-  network: ws
-  port: 443
-  server: 92.223.124.62
-  servername: gcore.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: a4797cd3-9939-4a70-958e-ea6301e871db
-  ws-opts:
-    headers:
-      Host: s-0wuppjbl2e.gcorecdn.net
-    path: /newgcore
-- encryption: none
-  fingerprint: edge
-  liveness: true
-  name: '1155'
-  network: tcp
-  port: 1155
-  reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-    short-id: "4e4aaad65cc07da8"
-  server: s1.berluno.ir
-  servername: tgju.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: bcbd26d1-2e77-48d6-bce9-d8138cf6703b
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-5.230.219.109 8444
-  network: tcp
-  port: 8444
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: "1a2b3c4d"
-  server: 5.230.219.109
-  servername: volkswagen.de
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-- encryption: none
-  liveness: true
-  name: VLESS-178.172.227.124 14430
-  network: ws
-  port: 14430
-  server: 178.172.227.124
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  ws-opts:
-    headers:
-      Host: 178.172.227.124
-    path: /vless
-- alterId: 0
-  cipher: auto
-  liveness: true
-  name: FREAKCONFIG 2
-  port: 443
-  server: 176.9.199.190
-  sub: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6bb70a79-c55b-4180-89e3-fc29bfab6662
-- alterId: 0
-  cipher: auto
-  liveness: true
-  name: FREAKCONFIG-1B
-  network: ws
-  port: 443
-  server: us032024.ssgreen.org
-  sub: ''
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 34c974b2-168d-403a-a794-18976debfb95
-  ws-opts:
-    headers:
-      Host: US032024.ssgreen.org
-    path: /wes
-- liveness: true
-  name: 158.247.253.243 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 158.247.253.243
-  skip-cert-verify: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  sub: ''
-  type: trojan
-  udp: true
 - encryption: none
   flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-51.158.206.25 23576
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: "01"
-  server: 51.158.206.25
-  servername: fuck.rkn
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- encryption: mlkem768x25519plus.native.0rtt.JhFafu3WxlVo6xMe01oUXCPAFQoc4bt5updF83mIthE
-  liveness: true
-  name: 443-1C
-  network: tcp
-  port: 443
-  server: iran.powerpanel.space
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 3735e2c2-18b9-4dec-9d03-aab52345d5ff
-- encryption: mlkem768x25519plus.native.0rtt.LOWtBNcapyLzw6_ugBjjAyJhW6Iy0I4X5iZl4_CHaXQ
-  fingerprint: chrome
-  liveness: true
-  name: '2064'
-  network: xhttp
-  port: 2064
-  reality-opts:
-    public-key: RxMyzG_jhPktvOCB_bEqYKM7-E0E98Wrk-7c7e97zTs
-    short-id: "bef3f56c4c0158e7"
-  server: prime.pishroo-rayaneh.ir
-  servername: addons.mozilla.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8921b02-9ef1-4002-81cf-e1f0d53e056d
-  xhttp-opts:
-    path: /
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-89.105.218.132 443
+  name: VLESS-89.105.218.143 443
   network: tcp
   port: 443
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: "428ef87fd47a3a32"
-  server: 89.105.218.132
+  server: 89.105.218.143
   servername: golos.mail.ru
   sub: ''
   tls: true
   type: vless
   udp: true
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
+- cipher: chacha20-ietf-poly1305
   liveness: true
-  name: 443-1D
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-  server: caudal-reason.freevideochats.org
-  servername: gofuture.games
+  name: 23.230.52.119 42878
+  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+  port: 42878
+  server: 23.230.52.119
   sub: ''
-  tls: true
-  type: vless
+  type: ss
   udp: true
-  uuid: 2f022658-d37b-40ed-bf63-34a33843a06b
-- encryption: none
-  liveness: true
-  name: VLESS-51.24.93.21 22222
-  network: tcp
-  port: 22222
-  server: 51.24.93.21
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- alpn:
-  - http/1.1
-  encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: VLESS-94.184.37.198 18409-1D
-  network: tcp
-  port: 18409
-  server: 94.184.37.198
-  servername: access.dastanacloud.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 965cd4b2-e31f-4b23-a227-eccd9f15627d
-- encryption: none
-  fingerprint: edge
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-185.147.27.23 2083
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: LSatvkYtdgq5oND_moM9NRW-ZDbdlTvyX9gzeF9r3W8
-    short-id: "1cfdb63f3b860379"
-  server: 185.147.27.23
-  servername: frb1.hat.onl
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
-- liveness: true
-  name: 146.75.57.7 443
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 146.75.57.7
-  skip-cert-verify: false
-  sni: cdn.akamai.steamstatic.com
-  sub: ''
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: cdn.akamai.steamstatic.com
-    path: /---@MiTiVPN---@MiTiVPN
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-147.45.66.60 43000
-  network: tcp
-  port: 43000
-  reality-opts:
-    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
-    short-id: "4d3d8e15"
-  server: 147.45.66.60
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-185.215.184.50 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: 185.215.184.50
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
 - cipher: aes-256-gcm
   liveness: true
-  name: 79.127.139.242 19999
+  name: 38.91.107.188 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 79.127.139.242
-  sub: ''
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  liveness: true
-  name: 177.202.64.67 1080
-  password: FJo_V-KMvriDekN0CYkdNH0C
-  port: 1080
-  server: 177.202.64.67
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: safari
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-96.62.224.129 444
-  network: tcp
-  port: 444
-  reality-opts:
-    public-key: tEHL8oz8kXsEPy224pqQ0go5CkbDYRrDMG8DMfMrPSs
-    short-id: "45ba24f917ad1f12"
-  server: 96.62.224.129
-  servername: de1.vrsvpn.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: cdf4bc13-31e6-4bff-962c-05fe9151c593
-- alterId: 0
-  cipher: auto
-  liveness: true
-  name: FREAKCONFIG-1A
-  port: 28382
-  server: 109.70.74.201
-  sub: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09f0df6a-dea9-4a63-9192-0c9d5e0c9cd2
-- cipher: 2022-blake3-aes-256-gcm
-  liveness: true
-  name: 16.171.44.134 443
-  password: k8IgRTFAIZdpbdRBVtNQpsYvc9ey30MXxTXzjhRs0Uw=:HaUACYvs7z4EUqvZCtOryKvG02thRCZezfzusIfPlMQ=
-  port: 443
-  server: 16.171.44.134
-  sub: ''
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  liveness: true
-  name: 70.34.212.124 8388
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
+  server: 38.91.107.188
   sub: ''
   type: ss
   udp: true
 - encryption: none
   liveness: true
-  name: VLESS-51.200.19.243 22224
-  network: tcp
-  port: 22224
-  server: 51.200.19.243
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- liveness: true
-  name: VLESS-172.64.229.170 80
+  name: '2086'
   network: ws
-  port: 80
-  server: 172.64.229.170
+  port: 2086
+  server: www.speedtest.net
   sub: ''
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 8137e9a6-22e6-4707-a120-a6dea17c7e00
   ws-opts:
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- encryption: mlkem768x25519plus.native.0rtt.rjQuqwdjbpXsmbkRXJbTSqsAN_H1Uce-wttI73sEIBo
-  liveness: true
-  name: '8099'
-  network: tcp
-  port: 8099
-  server: tunir.helpower.ir
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e6ab522f-7fe4-4010-aedc-7c46f67a84b5
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-185.215.184.86 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: 185.215.184.86
-  servername: dvizhok.su
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-201.51.11.65 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
-  server: 201.51.11.65
-  servername: absolute-disaster.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
-- fingerprint: chrome
-  liveness: true
-  name: VLESS-188.137.178.174 8443
-  network: ws
-  port: 8443
-  server: 188.137.178.174
-  servername: fs.qicai99.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: /
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1S
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: prvtch.titun.su
-  servername: perevodchiki.su
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: media.v1.StreamService
-  liveness: true
-  name: VLESS-150.40.126.22 443
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs
-    short-id: "861ac7d66953e55f"
-  server: 150.40.126.22
-  servername: rs4.univesalsrv.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-- alpn:
-  - http/1.1
-  encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: 443-1O
-  network: ws
-  port: 443
-  server: n3.topingr.ir
-  servername: oslo.zovip2.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
-  ws-opts:
-    headers:
-      Host: oslo.zovip2.ir
-    path: /api/v3/pulse
-- alpn:
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: '6443'
-  network: tcp
-  port: 6443
-  server: api-austria.locallynet.org
-  servername: api-austria.locallynet.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-- encryption: none
-  fingerprint: qq
-  liveness: true
-  name: '4443'
-  network: xhttp
-  port: 4443
-  server: lv3.nexfile.net
-  servername: lv3.nexfile.net
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  xhttp-opts:
-    path: /api/v1/sync/
-- encryption: none
-  liveness: true
-  name: VLESS-163.172.214.188 80
-  network: ws
-  port: 80
-  server: 163.172.214.188
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  ws-opts:
-    headers:
-      Host: sc-thenetherlands1.09vpn.com
-    path: /vless/
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: VLESS-85.9.114.39 2087
-  network: xhttp
-  port: 2087
-  server: 85.9.114.39
-  servername: f5a202bbb5cac561.ironos.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: f415ebc0-2061-4688-b3e8-f1959668a5dd
-  xhttp-opts:
-    host: de2.ironos.ir
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: 443-1U
-  network: xhttp
-  port: 443
-  server: download.onecloudtraining.com
-  servername: download.onecloudtraining.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
-  xhttp-opts:
-    path: /stream/v3/upload/KAawhnLCtp
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: 443-1N
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
-    short-id: "c71118d9399fb8c2"
-  server: 15d7fft.nl11.h1clayd.click
-  servername: 15d7fft.nl11.h1clayd.click
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-198.16.113.222 8443
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: "69984b9e02545831"
-  server: 198.16.113.222
-  servername: www.apple.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-193.163.203.170 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: "b28db60d77c50b4f"
-  server: 193.163.203.170
-  servername: yandex.ru
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-- liveness: true
-  name: 64.188.79.139 2084
-  password: M6EqM5cCx-10FAcmYnGBz4Cwr1zzSYb1
-  port: 2084
-  server: 64.188.79.139
-  sni: login.vk.com
-  sub: ''
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-92.119.165.51 6443
-  network: tcp
-  port: 6443
-  server: 92.119.165.51
-  servername: zug-net.locallynet.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-- encryption: none
-  liveness: true
-  name: VLESS-13.43.176.3 22222
-  network: tcp
-  port: 22222
-  server: 13.43.176.3
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- liveness: true
-  name: 216.238.104.154 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.238.104.154
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
-  sub: ''
-  type: trojan
-  udp: true
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: ZIBANABZ-1B
-  network: tcp
-  port: 3939
-  reality-opts:
-    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
-    short-id: "d9a2600fdecd7be2"
-  server: zibanabz.jonsonvip.ir
-  servername: ai.android
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
-- encryption: none
-  fingerprint: ios
-  liveness: true
-  name: '1230'
-  network: tcp
-  port: 1230
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: "9b60d3"
-  server: p1real1.greewebservices.ir
-  servername: play.googleapis.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
-- encryption: none
-  liveness: true
-  name: '3174'
-  network: xhttp
-  port: 3174
-  server: sam.my.id
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 46cc3c41-1528-47b3-b817-ad2091f41618
-  xhttp-opts:
-    host: firefox.com
-    path: /
-- liveness: true
-  name: VLESS-46.250.254.187 443
-  network: ws
-  port: 443
-  server: 46.250.254.187
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: /fp=chromesecurity=tls
-- encryption: none
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-104.171.133.209 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
-    short-id: "64c1fe36c7846400"
-  server: 104.171.133.209
-  servername: anyfile2file.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
-- encryption: none
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-5.175.211.248 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: "1a2b3c4d"
-  server: 5.175.211.248
-  servername: images.porsche.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-- encryption: none
-  fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-  liveness: true
-  name: 443-1V
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
-    short-id: "1469af2040b7c323"
-  server: rs2.univesalsrv.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-- fingerprint: chrome
-  liveness: true
-  name: VLESS-104.26.12.227 2096
-  network: ws
-  port: 2096
-  server: 104.26.12.227
-  servername: shanxp.dpdns.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  ws-opts:
-    headers:
-      Host: shanxp.dpdns.org
-    path: /
-- liveness: true
-  name: 66.163.112.121 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.112.121
-  skip-cert-verify: false
-  sni: www.unlockyourfuturefindyourperfectcareer.com
-  sub: ''
-  type: trojan
-  udp: true
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: stats.v2.StreamService
-  liveness: true
-  name: 443-1I
-  network: grpc
-  port: 443
-  server: cdn.mediacorphub.org
-  servername: cdn.mediacorphub.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- encryption: none
-  liveness: true
-  name: VLESS-18.132.237.193 22223
-  network: tcp
-  port: 22223
-  server: 18.132.237.193
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: '39695'
-  network: ws
-  port: 39695
-  server: tutorial.zarghamweb.ir
-  servername: pasar.zarghamweb.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 073ddc87-7653-4886-b186-765644a3b760
-  ws-opts:
-    headers:
-      Host: pasar.zarghamweb.ir
-    path: /
-- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
-  liveness: true
-  name: 8080-1B
-  network: tcp
-  port: 8080
-  server: zibanabz.jonsonvip.ir
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 032c5a4d-0e1b-4077-89ad-129386180d2c
-- alpn:
-  - h2
-  encryption: none
-  fingerprint: edge
-  grpc-opts:
-    grpc-service-name: hub.v1.ObjectService
-  liveness: true
-  name: 443-1M
-  network: grpc
-  port: 443
-  server: assets.mediacorphub.org
-  servername: assets.mediacorphub.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-95.182.93.43 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: nCiIB8BmrCGzwms7sf0CBcz6VTzhXemuChdO5V_SnD4
-    short-id: "1901f7857cb99487"
-  server: 95.182.93.43
-  servername: docs.google.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2a6fb02-d9fa-43d6-b220-10dcacc36512
-- encryption: none
-  liveness: true
-  name: VLESS-51.24.104.155 22224
-  network: tcp
-  port: 22224
-  server: 51.24.104.155
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- encryption: none
-  fingerprint: edge
-  liveness: true
-  name: '2087'
-  network: xhttp
-  port: 2087
-  reality-opts:
-    public-key: mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY
-    short-id: "3258252d44113e23"
-  server: guide.blog-forme.ru
-  servername: guide.blog-forme.ru
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  xhttp-opts:
-    path: /v2/sync/6e9367
-- encryption: none
-  liveness: true
-  name: 443-1P
-  network: xhttp
-  port: 443
-  server: proxy.onecloudtraining.com
-  servername: proxy.onecloudtraining.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
-- cipher: aes-256-gcm
-  liveness: true
-  name: 136.243.249.198 443
-  password: h8j6e3xuihn2epl9
-  port: 443
-  server: 136.243.249.198
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: qq
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1B
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -BN9yCN0ECqxOPoJOan1-CIMEYc5e7wdJwaeDxsUM20
-  server: sundaylanzgem.site
-  servername: sundaylanzgem.site
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1F
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: AKTROUZ03ghRLr5wYqigzZEccftHgx6PpTmwclD3DhY
-    short-id: "57d598708fb7e8b0"
-  server: sr5.kivra.fun
-  servername: g5.kivra.fun
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b6f1777b-44a3-4de6-9ddd-7c790bd3b61c
-- encryption: none
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-5.231.45.196 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: "1a2b3c4d"
-  server: 5.231.45.196
-  servername: images.porsche.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-87.120.252.67 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-  server: 87.120.252.67
-  servername: game.worldoftanks.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5446e31-6370-42cc-b6d4-44698f57acf5
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: '2099'
-  network: tcp
-  port: 2099
-  reality-opts:
-    public-key: bJUsLMshGFxw4AFJslDjNzBigCzHmGVWfeaRImnwo04
-    short-id: "30ae0eeeff39adde"
-  server: so1.fereshtehagonahnemikonnad.ir
-  servername: vps.tc
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7be1d25f-bc02-4eed-aa34-4bbc1bcabb55
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: neurex
-  liveness: true
-  name: VLESS-79.141.164.83 443
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: "27350908de933e09"
-  server: 79.141.164.83
-  servername: nlb.kosmosapp.net
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96c12f5b-a591-4e67-8ab7-7928ab826f88
-- fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-144.31.140.125 8443
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
-    short-id: "168c15efac9df5fd"
-  server: 144.31.140.125
-  servername: twitch.tv
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-- liveness: true
-  name: VLESS-193.188.21.253 14430
-  network: ws
-  port: 14430
-  server: 193.188.21.253
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  ws-opts:
-    headers:
-      Host: 193.188.21.253
-    path: /vless
-- encryption: none
-  fingerprint: random
-  liveness: true
-  name: VLESS-185.126.93.225 443
-  network: xhttp
-  port: 443
-  server: 185.126.93.225
-  servername: tg1.cdnphotos.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: f04cc810-aaf2-4a7b-8cad-356cdd30d394
-  xhttp-opts:
-    path: /api/v1/?ed
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: stats.v2.StreamService
-  liveness: true
-  name: 443-1J
-  network: grpc
-  port: 443
-  server: images.mediacorphub.org
-  servername: images.mediacorphub.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+      Host: dry-snow-2e6f.fastip25478.workers.dev
+    path: /eyJqdW5rIjoic1VBWDhGMXJsREg5WUoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4My4xNDcuMjU0LjI0NSJdfQ==?ed=2560
 - encryption: none
   fingerprint: firefox
   flow: xtls-rprx-vision
@@ -1097,73 +68,128 @@ proxies:
   type: vless
   udp: true
   uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
-- encryption: mlkem768x25519plus.native.0rtt.iykb_UHpf64YyPApv0U03S3q_QxqT8RhuHC7txkRcS4
+- encryption: none
+  fingerprint: chrome
   liveness: true
-  name: '1099'
-  network: tcp
-  port: 1099
-  server: tunir.helpower.ir
+  name: VLESS-172.64.150.28 443
+  network: ws
+  port: 443
+  server: 172.64.150.28
+  servername: fs.qicai99.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /fp=chrome
+- fingerprint: chrome
+  liveness: true
+  name: VLESS-54.46.72.234 8030
+  network: ws
+  port: 8030
+  server: 54.46.72.234
+  servername: spjd.cbc.qzz.io
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 37665857-8b6e-4daa-8231-3e2927221558
+  ws-opts:
+    headers:
+      Host: spjd.cbc.qzz.io
+    path: /proxyip=ProxyIP.US.CMLiussss.net
+- fingerprint: edge
+  liveness: true
+  name: VLESS-132.243.163.253 443
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: "d5501b156391e01d"
+  server: 132.243.163.253
+  servername: 38917fx.es1.h1clayd.click
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  xhttp-opts:
+    path: /
+- encryption: none
+  liveness: true
+  name: VLESS-138.124.70.41 14430
+  network: ws
+  port: 14430
+  server: 138.124.70.41
   sub: ''
   type: vless
   udp: true
-  uuid: e6ab522f-7fe4-4010-aedc-7c46f67a84b5
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
+- encryption: none
+  fingerprint: unsafe
+  liveness: true
+  name: VLESS-104.18.178.116 443
+  network: ws
+  port: 443
+  server: 104.18.178.116
+  servername: zaked-95e4.wopecuyubak61.workers.dev
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98b77ca9-93b6-4bc5-941f-312ec6d585e4
+  ws-opts:
+    headers:
+      Host: zaked-95e4.wopecuyubak61.workers.dev
+    path: /stream/DEVCOP/312ec6d585e4/loc-0?ed=2048
+- encryption: none
+  liveness: true
+  name: VLESS-15.237.224.161 22224
+  network: tcp
+  port: 22224
+  server: 15.237.224.161
+  sub: ''
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - alpn:
   - http/1.1
-  encryption: none
   fingerprint: chrome
   liveness: true
-  name: VLESS-94.184.37.198 18409-1B
-  network: tcp
-  port: 18409
-  server: 94.184.37.198
-  servername: access.dastanacloud.ir
+  name: 443-1G
+  network: ws
+  port: 443
+  server: mali.www-fifaweb.com
+  servername: odincdforge.arka5tech.ir
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: c23c2829-18a2-4a4f-ae83-b448388cf515
-- liveness: true
-  name: VLESS-51.38.71.147 8443
-  network: tcp
-  port: 8443
-  server: 51.38.71.147
-  sub: ''
-  type: vless
-  udp: true
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-- encryption: mlkem768x25519plus.native.0rtt.Eq88avlMmOgeqKsIJpoU4Wyczy8TVJAKEPnd0dILKlQ
+  uuid: bf5e6b69-d2a9-bb8f-f091-2e2b1d81ca8c
+  ws-opts:
+    headers:
+      Host: odincdforge.arka5tech.ir
+    path: /odin-ssl/
+- cipher: chacha20-ietf-poly1305
   liveness: true
-  name: '46539'
-  network: xhttp
-  port: 46539
-  server: usa.amosh.sbs
+  name: 54.37.240.40 8080
+  password: 8nrpt2il04ptci2j
+  port: 8080
+  server: 54.37.240.40
   sub: ''
-  type: vless
+  type: ss
   udp: true
-  uuid: 901c1ed2-be44-4c97-843e-7bcdcce28e04
-  xhttp-opts:
-    host: usa.amosh.sbs
-    path: /
 - encryption: none
   fingerprint: chrome
   liveness: true
-  name: VLESS-85.9.114.245 2083
-  network: xhttp
-  port: 2083
-  server: 85.9.114.245
-  servername: 3d6325228e1fd1a7.ironos.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: f415ebc0-2061-4688-b3e8-f1959668a5dd
-  xhttp-opts:
-    host: netherland1.ironos.ir
-    path: /
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: 80-1B
+  name: '80'
   network: xhttp
   port: 80
   reality-opts:
@@ -1179,129 +205,12 @@ proxies:
   xhttp-opts:
     host: uk.ui.skydown.info
     path: /yokoso/sharingan
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 23.230.52.119 42878
-  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
-  port: 42878
-  server: 23.230.52.119
-  sub: ''
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   liveness: true
-  name: 185.22.153.117 18443
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  port: 18443
-  server: 185.22.153.117
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: VLESS-3.168.217.190 443
-  network: ws
-  port: 443
-  server: 3.168.217.190
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  ws-opts:
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-    path: /
-- encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: 8080-1F
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: oF1oqDphaud14nHcna8QOKpeQxk32E9uhHYSJFfLAWo
-    short-id: "d64d4284791187b9"
-  server: svrty.fars-remen.ir
-  servername: tgju.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4799420a-c720-46b1-9dfe-356438e50f10
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 54.37.240.40 8080
-  password: 8nrpt2il04ptci2j
-  port: 8080
-  server: 54.37.240.40
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: VLESS-46.33.8.254 443
-  network: xhttp
-  port: 443
-  server: 46.33.8.254
-  servername: main.onecloudtraining.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
-  xhttp-opts:
-    path: /stream/v1/chunk/m6OfwfAj3W
-- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
-  liveness: true
-  name: 8080-1C
-  network: tcp
-  port: 8080
-  server: zibanabz.jonsonvip.ir
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
-- alpn:
-  - h2
-  - http/1.1
-  encryption: none
-  liveness: true
-  name: VLESS-91.107.255.63 39653
-  network: tcp
-  port: 39653
-  server: 91.107.255.63
-  servername: online.shop.ir.eeso.cc
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1K
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: v8flw1il4w2wrrss40MTSKQh_UIOi7qWtakqqzNrk1I
-    short-id: "64ffa8f4"
-  server: tuns.rupfem.ir
-  servername: dl.google.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 65e7fa8d-180a-4819-8f77-28e93f58f0ce
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 62.182.193.228 8388
-  password: 2e555e46dbc421452416834962fd014f
+  name: 154.36.158.197 8388
+  password: BeaUf9c0AEWH40Pu
   port: 8388
-  server: 62.182.193.228
+  server: 154.36.158.197
   sub: ''
   type: ss
   udp: true
@@ -1309,424 +218,136 @@ proxies:
   fingerprint: firefox
   flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-13.143.172.78 8443
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lQn0k9GCrG7Hh34b8ezAyVjc9KBCxQm3oP0xdxKGy0U
-    short-id: "35cb85e41b041622"
-  server: 13.143.172.78
-  servername: nl1.slowframe.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: e50e6851-a29a-45a1-811d-1e9230c1512a
-- alpn:
-  - http/1.1
-  encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: VLESS-3.168.218.14 443
-  network: ws
-  port: 443
-  server: 3.168.218.14
-  servername: d2ex4nxd2e01ub.cloudfront.net
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  ws-opts:
-    headers:
-      Host: d2ex4nxd2e01ub.cloudfront.net
-    path: /
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1E
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-  server: caudal-reason.freevideochats.org
-  servername: lockheart.info
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a12d4d-dfcd-4b87-bb55-68e0e629dd48
-- encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: 443-1L
-  network: xhttp
-  port: 443
-  server: websiteiran2.zorfel.ir
-  servername: cdn.akamai.steamstatic.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4a956562-ef72-49e8-991c-7cceb99b6478
-  xhttp-opts:
-    host: v2German2053as.global.ssl.fastly.net
-    path: /
-- encryption: none
-  fingerprint: ios
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-89.105.218.147 443
+  name: VLESS-185.215.184.50 443
   network: tcp
   port: 443
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: "428ef87fd47a3a32"
-  server: 89.105.218.147
-  servername: golos.mail.ru
+  server: 185.215.184.50
   sub: ''
   tls: true
   type: vless
   udp: true
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
 - encryption: none
-  liveness: true
-  name: 80-1A
-  network: ws
-  port: 80
-  server: sc-thenetherlands2.09vpn.com
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e73df646-1f62-41bf-8c50-653497d603d0
-  ws-opts:
-    headers:
-      Host: SC-TheNetherlands2.09vpn.com
-    path: /vless/
-- alpn:
-  - http/1.1
-  encryption: none
   fingerprint: chrome
   liveness: true
-  name: VLESS-94.184.37.198 18409-1A
-  network: tcp
-  port: 18409
-  server: 94.184.37.198
-  servername: access.dastanacloud.ir
+  name: VLESS-172.64.149.54 443
+  network: ws
+  port: 443
+  server: 172.64.149.54
+  servername: lATE-LaB-d6A2.CIwodA8715.WoRKerS.DeV
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 1e1d4f1d-fed9-40a0-8576-131e52602309
+  uuid: fe34b5df-e634-4c83-a057-e53f41ce8e27
+  ws-opts:
+    headers:
+      Host: late-lab-d6a2.ciwoda8715.workers.dev
+    path: /eyJqdW5rIjoiQ3dmV1d4OUFQdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
 - encryption: none
+  fingerprint: ios
   flow: xtls-rprx-vision
   liveness: true
-  name: 443-1W
+  name: 443-1B
   network: tcp
   port: 443
   reality-opts:
-    public-key: d4uh76IxM9qzEsIfyJnE_s7gGru2dUpUc4HEj48Jmgo
-    short-id: "927b8f49a5cd735f"
-  server: mw-ru3.star1905.org
-  servername: mw-nl3.star1905.org
+    public-key: EMMr7Eqwy3wpgbatnOaAmym5Tm4nXyJlC83iVvCadmk
+    short-id: "f3f00787a8b3f471"
+  server: www.pexqelo.ir
+  servername: opensuse.org
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 90559189-7899-4f25-a6ba-1f9057f9e901
+  uuid: 4da595dc-9eeb-40e6-b431-694b077a00c9
 - liveness: true
-  name: VLESS-172.64.158.146 8880
-  network: ws
-  port: 8880
-  server: 172.64.158.146
+  name: '20123'
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  port: 20123
+  server: sclass-00.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
   sub: ''
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 82.38.31.162 443
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.162
-  sub: ''
-  type: ss
+  type: trojan
   udp: true
 - encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: '1315'
-  network: tcp
-  port: 1315
-  reality-opts:
-    public-key: IrSImb5RZCxx91Vb7Ya1SOM_O_eCGUJHLXV7Mn-jDiw
-    short-id: "487cc3e1189d802f"
-  server: sam.my.id
-  servername: virgool.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 46cc3c41-1528-47b3-b817-ad2091f41618
-- fingerprint: chrome
-  liveness: true
-  name: 443-1R
-  network: tcp
-  port: 443
-  server: sg003.zestapp778.com
-  servername: sg003.zestapp778.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 51.83.61.102 8080
-  password: 29irqk0paakcx19v
-  port: 8080
-  server: 51.83.61.102
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: firefox
   flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-50.7.227.78 443
+  name: VLESS-5.231.28.130 443
   network: tcp
   port: 443
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: 50.7.227.78
-  servername: bizorg.su
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: "1a2b3c4d"
+  server: 5.231.28.130
+  servername: images.porsche.com
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- encryption: none
-  liveness: true
-  name: VLESS-185.207.197.12 80
-  network: ws
-  port: 80
-  server: 185.207.197.12
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 080fad7c-ff4b-499f-ab5d-52d69ea5745a
-  ws-opts:
-    headers:
-      Host: calm-tree-22b0.215-d2a.workers.dev
-    path: /pyip
-- encryption: none
-  fingerprint: ios
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 8080-1D
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: GxJhQpt1lrfIXaoZT7YtbuUzYMQEneaTyOyp6l77UhQ
-    short-id: "0e76f46e1e1c1439"
-  server: ch.darkveil.ir
-  servername: graphs.4cdn.de
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b92f9d02-1652-4b26-91ba-de322dc05baf
-- encryption: none
-  liveness: true
-  name: '8880'
-  network: ws
-  port: 8880
-  server: www.visa.com.sg
-  sub: ''
-  type: vless
-  udp: true
-  uuid: 35b94b2c-1b46-4209-a04b-32ecf159b632
-  ws-opts:
-    headers:
-      Host: fragrant-tooth-2180.97-cbb.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
 - cipher: aes-256-gcm
   liveness: true
-  name: 15.204.233.41 8882
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 15.204.233.41
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: '2096'
-  network: ws
-  port: 2096
-  server: free-server.techsonic.dev
-  servername: free-server.techsonic.dev
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
-- cipher: aes-128-gcm
-  liveness: true
-  name: 173.244.56.6 443
-  password: shadowsocks
-  port: 443
-  server: 173.244.56.6
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-169.40.42.202 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: "c39cc7310a"
-  server: 169.40.42.202
-  servername: yahoo.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- encryption: mlkem768x25519plus.native.0rtt.xBe0t_EmC0BeaX_V7Ci21mcMS99conOALXjwzXG-4gA
-  liveness: true
-  name: '9365'
-  network: tcp
-  port: 9365
-  server: tunir.helpower.ir
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e6ab522f-7fe4-4010-aedc-7c46f67a84b5
-- alpn:
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: 443-1X
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: eRMo4lY1fy9WbBCnAi7DUSIexoMwuWHtHMJ46maYQB0
-    short-id: "284f933fef3a62b6"
-  server: www.2freenet.ddns.info
-  servername: www.aparat.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: eea5b4b5-b734-4a57-8ba6-8060f79abc31
-  xhttp-opts:
-    host: www.aparat.com
-    path: /
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: stats.v2.StreamService
-  liveness: true
-  name: VLESS-80.47.13.182 443
-  network: grpc
-  port: 443
-  server: 80.47.13.182
-  servername: dl.megadrishto.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
-- encryption: none
-  liveness: true
-  name: VLESS-104.21.70.21 8080
-  network: ws
-  port: 8080
-  server: 104.21.70.21
-  sub: ''
-  type: vless
-  udp: true
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  ws-opts:
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-    path: /xiron
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-140.225.209.131 11443-1A
-  network: tcp
-  port: 11443
-  reality-opts:
-    public-key: aRrXkr-ISYHOylnMElRKZ4BoHBdgXLBDgBmCC899j1w
-    short-id: "1b10fef2d97c68a3"
-  server: 140.225.209.131
-  servername: 140.225.209.130
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 568e8786-99b5-4a26-b3af-a90e86ee0223
-- encryption: none
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-195.110.15.17 43000
-  network: tcp
-  port: 43000
-  reality-opts:
-    public-key: U_dxFnbfesmgSwL-SlpvGYFbpY5vlJ1kb52knlCXkkI
-    short-id: "8cfe1563"
-  server: 195.110.15.17
-  servername: 195.110.15.17
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0809eed6-5204-49b8-8312-b82a10024022
-- cipher: aes-256-gcm
-  liveness: true
-  name: 185.215.132.18 19999
+  name: 167.17.64.27 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 185.215.132.18
+  server: 167.17.64.27
   sub: ''
   type: ss
   udp: true
 - encryption: none
-  fingerprint: firefox
+  fingerprint: qq
   flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-141.227.160.61 8443
+  name: VLESS-94.183.234.245 443
   network: tcp
-  port: 8443
+  port: 443
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: "6ba85179e30d4fc2"
-  server: 141.227.160.61
-  servername: apple.com
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: "7f1e29593aa94ad1"
+  server: 94.183.234.245
+  servername: www.bing.com
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+- encryption: none
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-62.210.91.2 23576
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+  server: 62.210.91.2
+  servername: fuck.rkn
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- encryption: none
+  liveness: true
+  name: VLESS-188.114.97.6 443
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
+  ws-opts:
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+    path: id-amz
 - cipher: aes-256-gcm
   liveness: true
   name: 193.151.163.18 19999
@@ -1737,413 +358,56 @@ proxies:
   type: ss
   udp: true
 - alpn:
-  - h2
-  - http/1.1
-  encryption: none
-  fingerprint: firefox
-  liveness: true
-  name: 443-1G
-  network: xhttp
-  port: 443
-  server: nlcdn.fius.dev
-  servername: nlcdn.fius.dev
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00018846-513b-6e3b-5301-9c9ff2d375a3
-  xhttp-opts:
-    host: nlcdn.fius.dev
-    path: /api-test
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: hub.v1.ObjectService
-  liveness: true
-  name: 443-1H
-  network: grpc
-  port: 443
-  server: edge.mediacorphub.org
-  servername: edge.mediacorphub.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- cipher: aes-256-gcm
-  liveness: true
-  name: 23.162.152.22 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 23.162.152.22
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: chrome
-  liveness: true
-  name: '2053'
-  network: xhttp
-  port: 2053
-  server: usa.amosh.sbs
-  servername: usa.amosh.sbs
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 901c1ed2-be44-4c97-843e-7bcdcce28e04
-  xhttp-opts:
-    host: usa.amosh.sbs
-    path: /
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-140.225.209.131 11443-1B
-  network: tcp
-  port: 11443
-  reality-opts:
-    public-key: aRrXkr-ISYHOylnMElRKZ4BoHBdgXLBDgBmCC899j1w
-    short-id: "1b10fef2d97c68a3"
-  server: 140.225.209.131
-  servername: 140.225.209.130
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2462c208-e2e8-4071-95a7-afaae3ab9f0d
-- alpn:
-  - h2
   - http/1.1
   encryption: none
   fingerprint: chrome
-  flow: xtls-rprx-vision
   liveness: true
-  name: '8443'
-  network: tcp
-  port: 8443
-  server: static.241.103.99.91.clients.your-server.de
-  servername: static.241.103.99.91.clients.your-server.de
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8913774-1565-45d8-895f-a918304b15ab
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1T
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs
-    short-id: "027af64166562b09"
-  server: ca1.fox-lisa.ru
-  servername: ca1.fox-lisa.ru
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccb8ff48-3934-4250-b4ec-bb76b95d154f
-- encryption: none
-  liveness: true
-  name: VLESS-195.206.235.74 443
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: jhVdP7NFUaEXGfrmOqJlMCHTvqn3fymbzPfPT6NO4i0
-    short-id: "f72d4a2c7cbbacb1"
-  server: 195.206.235.74
-  servername: 80cb66x.nl13.h1clayd.click
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  xhttp-opts:
-    path: /d610f026b146
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-168.100.9.41 16386
-  network: tcp
-  port: 16386
-  reality-opts:
-    public-key: pCe1K8kz-ux6Gv_8nma15hPTBR3PZ4IiVAPSQqUbawY
-    short-id: "2d2db70fbd"
-  server: 168.100.9.41
-  servername: www.oracle.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4346f8c-631a-46ee-9caf-09a69c08bff3
-- encryption: none
-  liveness: true
-  name: VLESS-104.27.2.172 80
+  name: VLESS-172.67.173.89 443
   network: ws
-  port: 80
-  server: 104.27.2.172
+  port: 443
+  server: 172.67.173.89
+  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  skip-cert-verify: true
   sub: ''
+  tls: true
   type: vless
   udp: true
-  uuid: 234c52f2-0d7b-dc4a-0d6b-b0b300000025
+  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
   ws-opts:
     headers:
-      Host: billowing-surf-d251.netizo06.workers.dev
-    path: /sync
-- cipher: 2022-blake3-aes-256-gcm
-  liveness: true
-  name: 8080-1A
-  password: YZa1hYrK/xilZEfMJbGFPAdN1Oh/YIVIoDpyDZwHW5E=:zN4Jk+n+Va0MxBrTunjmyb+VZ/GjPs2xB4V0wLVM+xw=
-  port: 8080
-  server: tuns.rupfem.ir
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: ios
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-169.40.42.89 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: "c39cc7310a"
-  server: 169.40.42.89
-  servername: yahoo.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-5.175.171.30 8444
-  network: tcp
-  port: 8444
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: "1a2b3c4d"
-  server: 5.175.171.30
-  servername: www.volkswagen.de
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-- encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: ZIBANABZ-1A
-  network: tcp
-  port: 3939
-  reality-opts:
-    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
-    short-id: "d9a2600fdecd7be2"
-  server: zibanabz.jonsonvip.ir
-  servername: ai.android
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 032c5a4d-0e1b-4077-89ad-129386180d2c
-- encryption: none
-  liveness: true
-  name: VLESS-13.43.176.3 22224
-  network: tcp
-  port: 22224
-  server: 13.43.176.3
-  sub: ''
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- cipher: chacha20-ietf-poly1305
-  liveness: true
-  name: 82.38.31.206 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.206
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: stats.v2.StreamService
-  liveness: true
-  name: VLESS-89.105.195.150 443
-  network: grpc
-  port: 443
-  server: 89.105.195.150
-  servername: images.mediacorphub.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
 - alpn:
   - http/1.1
   encryption: none
   fingerprint: chrome
   liveness: true
-  name: VLESS-94.184.37.198 18409-1C
-  network: tcp
-  port: 18409
-  server: 94.184.37.198
-  servername: access.dastanacloud.ir
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4688f70-1bc7-4d7d-b7c8-70c901c1536d
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-88.218.42.115 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTHWxPgxWCY2aGTyJTLMOc9JVHdulknmGUqiolKPLgM
-    short-id: "dd908a76dbe472d4"
-  server: 88.218.42.115
-  servername: edge-3b715ba41dc5.eu-cdn539.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-- liveness: true
-  name: 199.232.78.160 443
+  name: 443-1E
   network: ws
-  password: MiTiVPN
   port: 443
-  server: 199.232.78.160
-  skip-cert-verify: false
-  sni: cdn.akamai.steamstatic.com
+  server: mtvdderwts-production.up.railway.app
+  servername: mtvdderwts-production.up.railway.app
   sub: ''
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: d2b3b330-4599-434c-9d36-d5c0114397ee
   ws-opts:
     headers:
-      Host: cdn.akamai.steamstatic.com
-    path: /---@MiTiVPN---@MiTiVPN
+      Host: mtvdderwts-production.up.railway.app
+    path: /api/fq1_A9
 - encryption: none
-  fingerprint: chrome
-  flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-51.158.206.98 23576
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: "01"
-  server: 51.158.206.98
-  servername: fuck.rkn
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- alpn:
-  - h2
-  encryption: none
-  fingerprint: edge
-  grpc-opts:
-    grpc-service-name: grpc
-  liveness: true
-  name: VLESS-88.80.150.15 443
-  network: grpc
-  port: 443
-  server: 88.80.150.15
-  servername: bg2.oncloudvpn.com
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
-- alterId: 0
-  cipher: auto
-  liveness: true
-  name: FREAKCONFIG 3
-  port: 18000
-  server: 84.17.41.2
-  sub: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- encryption: none
-  fingerprint: ios
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 8080-1E
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: PZNBtMPbRHyNEpkQ31Xpu9qh88rDvrT4tpstvE3VfXE
-    short-id: "2b09b2b8215156b7"
-  server: nl.serviceess.com
-  servername: graphs.4cdn.de
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: b92f9d02-1652-4b26-91ba-de322dc05baf
-- liveness: true
-  name: 104.25.239.113 2053
+  name: VLESS-51.75.118.18 20113
   network: ws
-  password: gHQP0D7D15
-  port: 2053
-  server: 104.25.239.113
-  skip-cert-verify: false
-  sni: marvdasht.phonecomparisonblog.org
+  port: 20113
+  server: 51.75.118.18
   sub: ''
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-    path: /
-- liveness: true
-  name: 167.82.64.7 443
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 167.82.64.7
-  skip-cert-verify: false
-  sni: cdn.akamai.steamstatic.com
-  sub: ''
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: cdn.akamai.steamstatic.com
-    path: /---@MiTiVPN---@MiTiVPN
-- encryption: none
-  fingerprint: qq
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-178.214.125.2 443
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
-    short-id: "6172ba9cffe9c22f"
-  server: 178.214.125.2
-  servername: conf.emaar.ru
-  sub: ''
-  tls: true
   type: vless
   udp: true
-  uuid: 62546819-be8b-4ecf-bb90-ed04fdf610f3
+  uuid: 00f1cd55-049c-492c-b15b-df360d8bcde3
+  ws-opts:
+    path: /vless-ws
 - encryption: none
   fingerprint: firefox
   flow: xtls-rprx-vision
@@ -2165,105 +429,127 @@ proxies:
   fingerprint: firefox
   flow: xtls-rprx-vision
   liveness: true
-  name: VLESS-31.7.60.250 443
+  name: VLESS-13.143.167.154 443
   network: tcp
   port: 443
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: 31.7.60.250
-  servername: perevodchiki.su
+    public-key: Y2uyTCt5ofoFht6Xl-55dBPCBUiYi1fFTVcmZtoiqFw
+  server: 13.143.167.154
+  servername: pl-balancer.peregrine-sub.net
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
 - encryption: none
-  fingerprint: firefox
+  fingerprint: random
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
   liveness: true
-  name: VLESS-170.114.45.6 2096
-  network: ws
-  port: 2096
-  server: 170.114.45.6
-  servername: pcloud.z-tas.com
+  name: VLESS-193.160.208.137 443
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: "a1b2c3d4e5f6a7b8"
+  server: 193.160.208.137
+  servername: api.hexagonicfield.com
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: a08b9c24-3252-4f7f-afa9-4a37040950fd
+- fingerprint: firefox
+  liveness: true
+  name: VLESS-46.250.250.149 2053
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: "9922313fffed1c63"
+  server: 46.250.250.149
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- encryption: none
+  liveness: true
+  name: '8880'
+  network: ws
+  port: 8880
+  server: www.visa.com.sg
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 35b94b2c-1b46-4209-a04b-32ecf159b632
   ws-opts:
     headers:
-      Host: pcloud.z-tas.com
+      Host: fragrant-tooth-2180.97-cbb.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- encryption: none
+  liveness: true
+  name: VLESS-46.250.254.187 443
+  network: ws
+  port: 443
+  server: 46.250.254.187
+  servername: fs.qicai99.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /fp
 - encryption: none
   fingerprint: chrome
   liveness: true
-  name: '4530'
-  network: ws
-  port: 4530
-  server: lkxljwpbkn.sodogodping.ir
-  servername: Tunnl.pasarguardspeed.ir
+  name: '2053'
+  network: xhttp
+  port: 2053
+  server: usa.amosh.sbs
+  servername: usa.amosh.sbs
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 9c96c038-8a1f-49b0-bb54-396533e082ab
+  uuid: 901c1ed2-be44-4c97-843e-7bcdcce28e04
+  xhttp-opts:
+    host: usa.amosh.sbs
+    path: /
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-23.95.115.116 2053
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: plwyjJZIVDt1OtwDAxfcLjDsR7dseVCe9Ia3HceIKEg
+    short-id: "a1b2c3d4"
+  server: 23.95.115.116
+  servername: www.cloudflare.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2739258b-a278-4bed-bc5d-f88830824dce
+- encryption: none
+  liveness: true
+  name: VLESS-104.19.173.68 8080
+  network: ws
+  port: 8080
+  server: 104.19.173.68
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 2500e602-671c-4654-a602-c518b7282167
   ws-opts:
     headers:
-      Host: Tunnl.pasarguardspeed.ir
-    path: /
-- fingerprint: chrome
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1A
-  network: tcp
-  port: 443
-  server: fduknew.titun.su
-  servername: bizorg.su
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- cipher: aes-256-gcm
-  liveness: true
-  name: 94.156.250.148 7001
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 94.156.250.148
-  sub: ''
-  type: ss
-  udp: true
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: 443-1Q
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: "428ef87fd47a3a32"
-  server: ee.subv.ru
-  servername: dvizhok.su
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- encryption: none
-  fingerprint: firefox
-  flow: xtls-rprx-vision
-  liveness: true
-  name: VLESS-13.143.185.22 6443
-  network: tcp
-  port: 6443
-  server: 13.143.185.22
-  servername: api-italy.locallynet.org
-  sub: ''
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
 - fingerprint: firefox
   liveness: true
   name: VLESS-151.241.226.201 2053
@@ -2279,21 +565,1195 @@ proxies:
   type: vless
   udp: true
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-- encryption: none
+- alpn:
+  - h2
+  encryption: none
   liveness: true
-  name: '30000'
-  network: tcp
-  port: 30000
-  reality-opts:
-    public-key: nBQXLj3YR6mFInTq62nVTMt1cLOtgTizM-ml02m2ulM
-    short-id: "818c51da"
-  server: rs9.zapkey.ir
-  servername: www.speedtest.net
+  name: VLESS-95.129.234.113 8443
+  network: xhttp
+  port: 8443
+  server: 95.129.234.113
+  servername: tansy-wharf.cdn.cachefleet.com
   sub: ''
   tls: true
   type: vless
   udp: true
-  uuid: 2e2ec791-871d-43f1-9b18-a0ff0dd51778
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  xhttp-opts:
+    host: is-tw-relay.cdn.cachefleet.com
+    path: /ccxf5snr06b8xxb6
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.35 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.35
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  liveness: true
+  name: VLESS-51.24.104.155 22224
+  network: tcp
+  port: 22224
+  server: 51.24.104.155
+  sub: ''
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- cipher: aes-256-gcm
+  liveness: true
+  name: 51.79.85.185 8118
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.79.85.185
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: ZIBANABZ-1A
+  network: tcp
+  port: 3939
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: "d9a2600fdecd7be2"
+  server: zibanabz.jonsonvip.ir
+  servername: ai.android
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-134.185.81.5 47881
+  network: tcp
+  port: 47881
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: "38d72071"
+  server: 134.185.81.5
+  servername: www.tesla.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+- encryption: none
+  fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+  liveness: true
+  name: VLESS-195.206.235.48 443
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: "d3bd772514c87d28"
+  server: 195.206.235.48
+  servername: 717252g.nl8.h1clayd.click
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+- encryption: none
+  flow: xtls-rprx-vision
+  liveness: true
+  name: 443-1J
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: d4uh76IxM9qzEsIfyJnE_s7gGru2dUpUc4HEj48Jmgo
+    short-id: "927b8f49a5cd735f"
+  server: mw-ru3.star1905.org
+  servername: mw-nl3.star1905.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90559189-7899-4f25-a6ba-1f9057f9e901
+- cipher: aes-256-gcm
+  liveness: true
+  name: 38.91.100.39 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.91.100.39
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-198.16.113.222 8443
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: "69984b9e02545831"
+  server: 198.16.113.222
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+- encryption: none
+  liveness: true
+  name: 443-1H
+  network: xhttp
+  port: 443
+  server: proxy.onecloudtraining.com
+  servername: proxy.onecloudtraining.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
+- fingerprint: random
+  liveness: true
+  name: VLESS-103.228.168.182 443
+  network: ws
+  port: 443
+  server: 103.228.168.182
+  servername: free.cndyw.ggff.net
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.com
+- encryption: none
+  fingerprint: random
+  liveness: true
+  name: VLESS-185.126.93.225 443
+  network: xhttp
+  port: 443
+  server: 185.126.93.225
+  servername: tg1.cdnphotos.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: f04cc810-aaf2-4a7b-8cad-356cdd30d394
+  xhttp-opts:
+    path: /api/v1/?ed
+- liveness: true
+  name: 216.152.147.201 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.201
+  sni: resources.connectingpeoplewithgreatjobs.com
+  sub: ''
+  type: trojan
+  udp: true
+- fingerprint: chrome
+  liveness: true
+  name: VLESS-46.250.242.104 443
+  network: ws
+  port: 443
+  server: 46.250.242.104
+  servername: fs.qicai99.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+- fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: tj
+  liveness: true
+  name: '20230'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
+    short-id: "abae4722"
+  server: jp004.421421.xyz
+  servername: www.nvidia.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0400697c-b581-4575-9d2f-0bbd4659312d
+- fingerprint: chrome
+  liveness: true
+  name: 443-1M
+  network: ws
+  port: 443
+  server: cf-socks.caoyuwu.eu.org
+  servername: cf-socks.caoyuwu.eu.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+  ws-opts:
+    headers:
+      Host: cf-socks.caoyuwu.eu.org
+    path: /
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-185.71.216.94 2093
+  network: tcp
+  port: 2093
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: "8a9725533854a7e8"
+  server: 185.71.216.94
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b7a8f61-74c0-491f-bbba-ea153edb1a4b
+- encryption: none
+  liveness: true
+  name: VLESS-195.206.235.74 443
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: jhVdP7NFUaEXGfrmOqJlMCHTvqn3fymbzPfPT6NO4i0
+    short-id: "f72d4a2c7cbbacb1"
+  server: 195.206.235.74
+  servername: 80cb66x.nl13.h1clayd.click
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  xhttp-opts:
+    path: /d610f026b146
+- alpn:
+  - http/1.1
+  encryption: none
+  fingerprint: firefox
+  liveness: true
+  name: 443-1K
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: eRMo4lY1fy9WbBCnAi7DUSIexoMwuWHtHMJ46maYQB0
+    short-id: "284f933fef3a62b6"
+  server: www.2freenet.ddns.info
+  servername: www.aparat.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: eea5b4b5-b734-4a57-8ba6-8060f79abc31
+  xhttp-opts:
+    host: www.aparat.com
+    path: /
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-157.22.185.68 2058
+  network: tcp
+  port: 2058
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: "937255313d6ce673"
+  server: 157.22.185.68
+  servername: www.cloudflare.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+- encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: VLESS-147.45.42.73 20443
+  network: ws
+  port: 20443
+  server: 147.45.42.73
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- cipher: aes-256-gcm
+  liveness: true
+  name: 15.204.233.41 8882
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 15.204.233.41
+  sub: ''
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: 443-1D
+  network: ws
+  port: 443
+  server: ju899i-production.up.railway.app
+  servername: ju899i-production.up.railway.app
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3b235cd3-45d4-49c5-9af3-b2f943afb7c5
+  ws-opts:
+    headers:
+      Host: ju899i-production.up.railway.app
+    path: /api/CxkTsc
+- liveness: true
+  name: 66.163.127.44 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.127.44
+  skip-cert-verify: false
+  sni: learn.indyourperfectremotetechjobfromthecomfortofhome.com
+  sub: ''
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  liveness: true
+  name: 202.50.253.81 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.81
+  sub: ''
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 57.131.4.13 8080
+  password: mx81glqbtlwuhcjo
+  port: 8080
+  server: 57.131.4.13
+  sub: ''
+  type: ss
+  udp: true
+- encryption: mlkem768x25519plus.native.0rtt.LOWtBNcapyLzw6_ugBjjAyJhW6Iy0I4X5iZl4_CHaXQ
+  fingerprint: chrome
+  liveness: true
+  name: '2064'
+  network: xhttp
+  port: 2064
+  reality-opts:
+    public-key: RxMyzG_jhPktvOCB_bEqYKM7-E0E98Wrk-7c7e97zTs
+    short-id: "bef3f56c4c0158e7"
+  server: prime.pishroo-rayaneh.ir
+  servername: addons.mozilla.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: a8921b02-9ef1-4002-81cf-e1f0d53e056d
+  xhttp-opts:
+    path: /
+- encryption: none
+  fingerprint: ios
+  liveness: true
+  name: '1030'
+  network: tcp
+  port: 1030
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: "9b60d3"
+  server: p11real2.greewebservices.ir
+  servername: play.googleapis.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1ca12389-0d86-4197-a79a-49d24539ce05
+- encryption: none
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-104.171.133.209 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: "64c1fe36c7846400"
+  server: 104.171.133.209
+  servername: anyfile2file.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
+  liveness: true
+  name: ZIBANABZ-1B
+  network: tcp
+  port: 8080
+  server: zibanabz.jonsonvip.ir
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 2c3692a8-a2ca-4f21-95bf-91758287e4ff
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-50.7.227.78 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: "428ef87fd47a3a32"
+  server: 50.7.227.78
+  servername: bizorg.su
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.184 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  sub: ''
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  liveness: true
+  name: 156.146.38.167 443
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: edge
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-185.147.27.23 2083
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: LSatvkYtdgq5oND_moM9NRW-ZDbdlTvyX9gzeF9r3W8
+    short-id: "1cfdb63f3b860379"
+  server: 185.147.27.23
+  servername: frb1.hat.onl
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
+- fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-45.90.59.15 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: "19253fae84102271"
+  server: 45.90.59.15
+  servername: www.cloudflare.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+- encryption: none
+  fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: hub.v1.ObjectService
+  liveness: true
+  name: VLESS-89.105.195.151 443
+  network: grpc
+  port: 443
+  server: 89.105.195.151
+  servername: assets.mediacorphub.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-51.158.206.8 23576
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+  server: 51.158.206.8
+  servername: fuck.rkn
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- fingerprint: chrome
+  liveness: true
+  name: VLESS-172.67.213.218 2096
+  network: ws
+  port: 2096
+  server: 172.67.213.218
+  servername: REd-suRf-2007.MatriSkA.wOrkeRs.DeV
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: e6b59d15-364c-4025-899a-84efa291d651
+  ws-opts:
+    headers:
+      Host: REd-suRf-2007.MatriSkA.wOrkeRs.DeV
+    path: /eyJqdW5rIjoiYWNoMkxHaUVYIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+- encryption: none
+  fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+  liveness: true
+  name: VLESS-79.182.39.131 443
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: "d3bd772514c87d28"
+  server: 79.182.39.131
+  servername: 717252g.nl8.h1clayd.click
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+- encryption: mlkem768x25519plus.native.0rtt.cqvItMzq8ixTzDKTeDW_P0fgrveoPht35s1tOhe3uhI
+  flow: xtls-rprx-vision
+  liveness: true
+  name: '8081'
+  network: tcp
+  port: 8081
+  server: so9.fereshtehagonahnemikonnad.ir
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 683680cc-7de6-40a1-80ae-acfb02b16100
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-109.172.114.57 2058
+  network: tcp
+  port: 2058
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: "937255313d6ce673"
+  server: 109.172.114.57
+  servername: www.cloudflare.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: 443-1C
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: edge.bookmai.com
+  servername: mother-earth.fyi
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+- liveness: true
+  name: 66.163.112.121 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.112.121
+  skip-cert-verify: false
+  sni: www.unlockyourfuturefindyourperfectcareer.com
+  sub: ''
+  type: trojan
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-169.40.42.90 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: "c39cc7310a"
+  server: 169.40.42.90
+  servername: yahoo.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- encryption: none
+  fingerprint: ios
+  liveness: true
+  name: '1260'
+  network: tcp
+  port: 1260
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: "9b60d3"
+  server: p1real4.greewebservices.ir
+  servername: play.googleapis.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
+- encryption: none
+  fingerprint: ios
+  liveness: true
+  name: '1040'
+  network: tcp
+  port: 1040
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: "9b60d3"
+  server: p11real3.greewebservices.ir
+  servername: play.googleapis.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
+- encryption: none
+  fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: gw.v2.PushService
+  liveness: true
+  name: 443-1O
+  network: grpc
+  port: 443
+  server: api.mediacorphub.org
+  servername: api.mediacorphub.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+- encryption: none
+  liveness: true
+  name: VLESS-146.75.59.186 443
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: cdn.akamai.steamstatic.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  ws-opts:
+    headers:
+      Host: ukoijji.global.ssl.fastly.net
+    path: /?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-185.215.184.86 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: "428ef87fd47a3a32"
+  server: 185.215.184.86
+  servername: dvizhok.su
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- cipher: aes-256-gcm
+  liveness: true
+  name: 172.111.38.72 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 172.111.38.72
+  sub: ''
+  type: ss
+  udp: true
+- fingerprint: chrome
+  liveness: true
+  name: 443-1A
+  network: ws
+  port: 443
+  server: ir2.cryptojakiro.com
+  servername: ir2.cryptojakiro.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8a1a991a-f206-447a-adaf-37a57c133418
+  ws-opts:
+    headers:
+      Host: ir2.cryptojakiro.com
+    path: /
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-188.116.27.6 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
+    short-id: "1174"
+  server: 188.116.27.6
+  servername: www.sony.co.uk
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: f3d543c5-f41b-46d7-85f8-d6f3ccefe280
+- alpn:
+  - h2
+  - http/1.1
+  encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: 443-1F
+  network: xhttp
+  port: 443
+  server: vghui9ytyu-production.up.railway.app
+  servername: vghui9ytyu-production.up.railway.app
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 767dfbb8-3c8a-435e-8e54-a3af898e4606
+  xhttp-opts:
+    host: vghui9ytyu-production.up.railway.app
+    path: /api/2f0ZyU
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.187 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.187
+  sub: ''
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: VLESS-172.64.88.98 443
+  network: ws
+  port: 443
+  server: 172.64.88.98
+  servername: pQCk9f-39B19Mjn4G57GAMzNZq5.paGES.dEV
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f1fc272-1324-43bc-a3d6-6eea42b4b418
+  ws-opts:
+    headers:
+      Host: pqck9f-39b19mjn4g57gamznzq5.pages.dev
+    path: /vl/sLqDlvT9ZPImvHLOQs6?ed=2560
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: ZIBANABZ-1C
+  network: tcp
+  port: 3939
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: "d9a2600fdecd7be2"
+  server: zibanabz.jonsonvip.ir
+  servername: ai.android
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2c3692a8-a2ca-4f21-95bf-91758287e4ff
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-37.221.76.116 2091
+  network: tcp
+  port: 2091
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: "08a4b1f473932632"
+  server: 37.221.76.116
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4d6567e-c46e-410f-95ab-ac3a61e030f3
+- encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: VLESS-173.245.58.75 443
+  network: ws
+  port: 443
+  server: 173.245.58.75
+  servername: amoosamiii.net
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  ws-opts:
+    headers:
+      Host: amoosamiii.net
+    path: /poiuyws@ThePackageCom
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 152.53.1.57 8388
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  port: 8388
+  server: 152.53.1.57
+  sub: ''
+  type: ss
+  udp: true
+- liveness: true
+  name: 104.25.239.113 2053
+  network: ws
+  password: gHQP0D7D15
+  port: 2053
+  server: 104.25.239.113
+  skip-cert-verify: false
+  sni: marvdasht.phonecomparisonblog.org
+  sub: ''
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: marvdasht.phonecomparisonblog.org
+    path: /
+- cipher: aes-128-gcm
+  liveness: true
+  name: 173.244.56.9 443
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  sub: ''
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  liveness: true
+  name: 15.204.246.108 8881
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 15.204.246.108
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: 443-1I
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: "428ef87fd47a3a32"
+  server: ee.subv.ru
+  servername: dvizhok.su
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.217 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-82.146.42.160 2058
+  network: tcp
+  port: 2058
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: "937255313d6ce673"
+  server: 82.146.42.160
+  servername: www.cloudflare.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-43.161.193.181 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE
+    short-id: "8c994df3c4e175a4"
+  server: 43.161.193.181
+  servername: addons.mozilla.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 280f4d33-69fb-4f0d-a4c3-fe0bf841009f
+- liveness: true
+  name: 188.114.97.80 443
+  network: ws
+  password: 98b77ca9-93b6-4bc5-941f-312ec6d585e4
+  port: 443
+  server: 188.114.97.80
+  skip-cert-verify: false
+  sni: zaked-95e4.wopecuyubak61.workers.dev
+  sub: ''
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zaked-95e4.wopecuyubak61.workers.dev
+    path: /stream/DEVCOP/312ec6d585e4/loc-0?ed=2048
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-164.37.111.78 8080
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: tIQQp41fRrliguh9hOjPdKHkR5P_tFHqfhpHU_SKazc
+    short-id: "eb11f7630faaaf60"
+  server: 164.37.111.78
+  servername: tgju.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17930566-4faa-43bc-9ebb-ad63356abd10
+- encryption: none
+  fingerprint: firefox
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-131.123.43.103 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg
+    short-id: "1f8bab7ad81089f2"
+  server: 131.123.43.103
+  servername: bg2.gacvpn.site
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+- fingerprint: firefox
+  liveness: true
+  name: VLESS-82.152.132.74 443
+  network: ws
+  port: 443
+  server: 82.152.132.74
+  servername: 82.152.132.74
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  ws-opts:
+    headers:
+      Host: 82.152.132.74
+    path: /assets/sync-8f3a71
+- fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-67.159.52.81 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: "feedbacc"
+  server: 67.159.52.81
+  servername: sg.fasti.win
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+- liveness: true
+  name: 216.152.155.23 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.155.23
+  skip-cert-verify: false
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+  sub: ''
+  type: trojan
+  udp: true
+- fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-198.16.113.221 8443
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: "69984b9e02545831"
+  server: 198.16.113.221
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+- alterId: 0
+  cipher: auto
+  liveness: true
+  name: FREAKCONFIG
+  port: 18000
+  server: 84.17.41.2
+  sub: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- fingerprint: chrome
+  liveness: true
+  name: 443-1L
+  network: ws
+  port: 443
+  server: wwww.qarvian.ir
+  servername: cdn.akamai.steamstatic.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64ce5faf-427b-4dd1-926c-6b7ced6b8c38
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
+    path: /
+- encryption: none
+  fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: stats.v2.StreamService
+  liveness: true
+  name: 443-1N
+  network: grpc
+  port: 443
+  server: cdn.mediacorphub.org
+  servername: cdn.mediacorphub.org
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+- encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: '2096'
+  network: ws
+  port: 2096
+  server: free-server.techsonic.dev
+  servername: free-server.techsonic.dev
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- cipher: aes-256-gcm
+  liveness: true
+  name: 38.128.66.32 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.128.66.32
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-185.71.216.177 2092
+  network: tcp
+  port: 2092
+  reality-opts:
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: "716b7eba38125f3a"
+  server: 185.71.216.177
+  servername: www.apple.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca21222b-caf1-4418-b404-345ea713daa4
+- encryption: none
+  fingerprint: chrome
+  liveness: true
+  name: VLESS-95.216.27.15 2053
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: "d368b94e275ab080"
+  server: 95.216.27.15
+  servername: www.google.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+- liveness: true
+  name: '29813'
+  password: 5t6i121em5lkmsmk
+  port: 29813
+  server: en001.zestapp778.com
+  sni: en001.zestapp778.com
+  sub: ''
+  type: trojan
+  udp: true
 - encryption: none
   fingerprint: chrome
   grpc-opts:
@@ -2312,333 +1772,377 @@ proxies:
   type: vless
   udp: true
   uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.155 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  sub: ''
+  type: ss
+  udp: true
+- encryption: mlkem768x25519plus.native.0rtt._fFH4skXICMnTh4JT8Z-opz_fEPLVLD1w2NW3PN7tgQ
+  liveness: true
+  name: '8080'
+  network: tcp
+  port: 8080
+  server: zibanabz.jonsonvip.ir
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
+- liveness: true
+  name: VLESS-162.159.43.187 2086
+  network: ws
+  port: 2086
+  server: 162.159.43.187
+  sub: ''
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  encryption: none
+  fingerprint: ios
+  liveness: true
+  name: VLESS-104.18.1.1 2053
+  network: ws
+  port: 2053
+  server: 104.18.1.1
+  servername: music1000.melobitmusic1.ir
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
+  ws-opts:
+    headers:
+      Host: music1000.melobitmusic1.ir
+    path: /
+- cipher: chacha20-ietf-poly1305
+  liveness: true
+  name: 82.38.31.203 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.203
+  sub: ''
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  liveness: true
+  name: 158.173.20.208 443
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.208
+  sub: ''
+  type: ss
+  udp: true
+- encryption: none
+  fingerprint: chrome
+  flow: xtls-rprx-vision
+  liveness: true
+  name: VLESS-169.40.42.202 443
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: "c39cc7310a"
+  server: 169.40.42.202
+  servername: yahoo.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- fingerprint: chrome
+  liveness: true
+  name: VLESS-188.137.178.174 8443
+  network: ws
+  port: 8443
+  server: 188.137.178.174
+  servername: fs.qicai99.com
+  sub: ''
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
 proxy-groups:
 - interval: 300
   name: automatic
   proxies:
-  - 443-1C
-  - 62.182.193.228 8388
-  - 185.215.132.18 19999
+  - VLESS-185.71.216.177 2092
+  - 57.131.4.13 8080
+  - VLESS-132.243.163.253 443
+  - VLESS-185.71.216.94 2093
+  - '20230'
   - VLESS-201.4.73.21 443
-  - VLESS-88.80.150.15 443
-  - VLESS-5.175.211.248 443
-  - 16.171.44.134 443
-  - FREAKCONFIG-1B
-  - VLESS-85.9.114.245 2083
-  - VLESS-80.47.13.182 443
-  - VLESS-89.105.218.147 443
-  - 443-1V
-  - VLESS-92.223.124.62 443
-  - 443-1D
-  - '30000'
-  - VLESS-193.163.203.170 443
-  - VLESS-51.24.93.21 22222
-  - VLESS-89.105.195.150 443
-  - '2064'
-  - VLESS-51.200.19.243 22224
-  - 443-1N
-  - VLESS-140.225.209.131 11443-1A
-  - '1230'
-  - 8080-1F
-  - VLESS-5.175.171.30 8444
-  - VLESS-13.43.176.3 22224
-  - 15.204.233.41 8882
-  - VLESS-169.40.42.202 443
-  - 8080-1C
-  - 51.83.61.102 8080
-  - VLESS-185.215.184.50 443
-  - VLESS-95.182.93.43 443
-  - 443-1S
-  - VLESS-94.184.37.198 18409-1C
-  - '2096'
-  - VLESS-104.171.133.209 443
-  - VLESS-178.214.125.2 443
-  - '8880'
-  - VLESS-50.7.227.78 443
-  - VLESS-51.158.206.98 23576
-  - VLESS-178.172.227.124 14430
-  - 79.127.139.242 19999
-  - 146.75.57.7 443
-  - 80-1B
-  - VLESS-46.33.8.254 443
-  - VLESS-185.215.184.86 443
-  - '1099'
-  - VLESS-5.231.45.196 443
-  - '9365'
-  - VLESS-193.188.21.253 14430
-  - VLESS-94.184.37.198 18409-1A
-  - VLESS-169.40.42.89 443
-  - VLESS-163.172.214.188 80
-  - 443-1P
-  - VLESS-3.168.218.14 443
-  - VLESS-188.137.178.174 8443
-  - VLESS-51.38.71.147 8443
-  - VLESS-151.241.226.201 2053
-  - VLESS-3.168.217.190 443
-  - '4443'
-  - 8080-1B
-  - VLESS-94.184.37.198 18409-1B
-  - VLESS-188.130.209.212 443
-  - 443-1B
-  - VLESS-13.143.172.78 8443
-  - 443-1O
-  - 23.162.152.22 19999
-  - VLESS-141.227.160.61 8443
-  - VLESS-104.27.2.172 80
-  - VLESS-152.228.139.33 35108
-  - VLESS-172.64.158.146 8880
-  - FREAKCONFIG 3
-  - VLESS-91.107.255.63 39653
-  - VLESS-89.105.218.132 443
-  - VLESS-185.207.197.12 80
-  - 94.156.250.148 7001
-  - 443-1J
-  - VLESS-201.51.11.65 443
-  - '1155'
-  - VLESS-18.132.237.193 22223
-  - VLESS-195.206.235.74 443
-  - '8099'
-  - '46539'
-  - VLESS-87.120.252.67 443
-  - 216.238.104.154 443
-  - VLESS-140.225.209.131 11443-1B
-  - 443-1R
-  - VLESS-195.110.15.17 43000
-  - VLESS-185.126.93.225 443
-  - 167.82.64.7 443
-  - VLESS-172.64.229.170 80
-  - VLESS-198.16.113.222 8443
-  - VLESS-5.230.219.109 8444
-  - 8080-1A
-  - FREAKCONFIG 2
-  - 443-1W
-  - '4530'
-  - 173.244.56.6 443
-  - 80-1A
-  - 443-1X
-  - '8443'
+  - 216.152.147.201 443
+  - 156.146.38.167 443
+  - VLESS-195.206.235.48 443
+  - FREAKCONFIG
+  - 38.91.107.188 19999
+  - 15.204.246.108 8881
+  - VLESS-188.116.27.6 443
   - 23.230.52.119 42878
-  - 70.34.212.124 8388
-  - 443-1A
-  - VLESS-147.45.66.60 43000
-  - 185.22.153.117 18443
-  - VLESS-51.158.206.25 23576
-  - 443-1L
-  - 193.151.163.18 19999
-  - VLESS-168.100.9.41 16386
-  - 64.188.79.139 2084
-  - 443-1G
-  - VLESS-51.24.104.155 22224
-  - 8080-1E
-  - 443-1H
-  - 443-1E
-  - 443-1F
-  - VLESS-170.114.45.6 2096
-  - 136.243.249.198 443
-  - VLESS-104.26.12.227 2096
-  - FREAKCONFIG-1A
-  - ZIBANABZ-1B
-  - 82.38.31.206 8080
-  - VLESS-13.43.176.3 22222
-  - '1315'
-  - 443-1K
-  - VLESS-31.7.60.250 443
-  - VLESS-85.9.114.39 2087
-  - VLESS-104.21.70.21 8080
-  - VLESS-79.141.164.83 443
-  - '6443'
-  - 158.247.253.243 443
-  - '3174'
-  - 443-1T
-  - 54.37.240.40 8080
-  - 8080-1D
-  - VLESS-88.218.42.115 443
-  - 199.232.78.160 443
-  - VLESS-13.143.185.22 6443
-  - VLESS-94.184.37.198 18409-1D
-  - 104.25.239.113 2053
-  - VLESS-150.40.126.22 443
-  - '39695'
-  - '2099'
-  - 82.38.31.162 443
-  - VLESS-185.147.27.23 2083
-  - 443-1I
-  - 66.163.112.121 443
-  - 443-1Q
-  - 443-1U
-  - '2053'
-  - VLESS-144.31.140.125 8443
-  - VLESS-96.62.224.129 444
-  - '2087'
-  - 177.202.64.67 1080
-  - VLESS-46.250.254.187 443
+  - VLESS-50.7.227.78 443
+  - VLESS-89.105.195.151 443
   - 443-1M
+  - 443-1O
+  - 443-1A
+  - VLESS-147.45.42.73 20443
+  - VLESS-89.105.218.143 443
+  - 54.37.240.40 8080
+  - 443-1F
+  - 443-1C
+  - 193.151.163.18 19999
+  - 82.38.31.187 8080
+  - VLESS-172.64.88.98 443
+  - VLESS-172.67.173.89 443
+  - VLESS-103.228.168.182 443
+  - VLESS-51.75.118.18 20113
+  - '8081'
+  - VLESS-67.159.52.81 443
+  - VLESS-104.171.133.209 443
+  - VLESS-82.146.42.160 2058
+  - VLESS-172.64.149.54 443
+  - VLESS-188.114.97.6 443
+  - VLESS-185.147.27.23 2083
+  - VLESS-172.64.150.28 443
+  - 82.38.31.155 8080
+  - '1040'
+  - VLESS-51.24.104.155 22224
+  - '1030'
+  - 443-1I
+  - 82.38.31.35 8080
+  - 216.152.155.23 443
+  - VLESS-94.183.234.245 443
+  - '80'
+  - VLESS-198.16.113.222 8443
+  - 188.114.97.80 443
+  - 443-1B
+  - VLESS-15.237.224.161 22224
+  - 104.25.239.113 2053
+  - VLESS-79.182.39.131 443
   - ZIBANABZ-1A
-  - VLESS-92.119.165.51 6443
+  - VLESS-104.18.1.1 2053
+  - 82.38.31.184 8080
+  - VLESS-188.130.209.212 443
+  - 172.111.38.72 19999
+  - 38.91.100.39 19999
+  - VLESS-23.95.115.116 2053
+  - VLESS-146.75.59.186 443
+  - VLESS-37.221.76.116 2091
+  - VLESS-138.124.70.41 14430
+  - 443-1L
+  - VLESS-5.231.28.130 443
+  - 66.163.112.121 443
+  - VLESS-157.22.185.68 2058
+  - VLESS-185.126.93.225 443
+  - 15.204.233.41 8882
+  - VLESS-131.123.43.103 443
+  - 443-1J
+  - VLESS-193.160.208.137 443
+  - VLESS-46.250.242.104 443
+  - '2064'
+  - 51.79.85.185 8118
+  - 152.53.1.57 8388
+  - 443-1K
+  - 443-1G
+  - ZIBANABZ-1B
+  - 82.38.31.217 8080
+  - VLESS-195.206.235.74 443
+  - 82.38.31.203 8080
+  - VLESS-13.143.167.154 443
+  - 167.17.64.27 19999
+  - VLESS-173.245.58.75 443
+  - 173.244.56.9 443
+  - VLESS-162.159.43.187 2086
+  - '2053'
+  - VLESS-185.215.184.50 443
+  - 66.163.127.44 443
+  - VLESS-134.185.81.5 47881
+  - VLESS-188.137.178.174 8443
+  - VLESS-46.250.254.187 443
+  - VLESS-62.210.91.2 23576
+  - '29813'
+  - VLESS-169.40.42.202 443
+  - 443-1H
+  - VLESS-104.18.178.116 443
+  - VLESS-109.172.114.57 2058
+  - '2086'
+  - VLESS-152.228.139.33 35108
+  - VLESS-169.40.42.90 443
+  - 38.128.66.32 19999
+  - VLESS-45.90.59.15 443
+  - 154.36.158.197 8388
+  - 202.50.253.81 19999
+  - VLESS-104.19.173.68 8080
+  - '8880'
+  - ZIBANABZ-1C
+  - VLESS-46.250.250.149 2053
+  - VLESS-185.215.184.86 443
+  - '8080'
+  - '1260'
+  - VLESS-198.16.113.221 8443
+  - '2096'
+  - VLESS-51.158.206.8 23576
+  - VLESS-95.129.234.113 8443
+  - VLESS-151.241.226.201 2053
+  - VLESS-82.152.132.74 443
+  - '20123'
+  - 158.173.20.208 443
+  - VLESS-164.37.111.78 8080
+  - VLESS-43.161.193.181 443
+  - 443-1D
+  - VLESS-54.46.72.234 8030
+  - 443-1N
+  - 443-1E
+  - VLESS-95.216.27.15 2053
+  - VLESS-172.67.213.218 2096
   type: url-test
   url: https://www.google.com/favicon.ico
 - name: 🌐 Proxy
   proxies:
   - automatic
-  - 443-1C
-  - 62.182.193.228 8388
-  - 185.215.132.18 19999
+  - VLESS-185.71.216.177 2092
+  - 57.131.4.13 8080
+  - VLESS-132.243.163.253 443
+  - VLESS-185.71.216.94 2093
+  - '20230'
   - VLESS-201.4.73.21 443
-  - VLESS-88.80.150.15 443
-  - VLESS-5.175.211.248 443
-  - 16.171.44.134 443
-  - FREAKCONFIG-1B
-  - VLESS-85.9.114.245 2083
-  - VLESS-80.47.13.182 443
-  - VLESS-89.105.218.147 443
-  - 443-1V
-  - VLESS-92.223.124.62 443
-  - 443-1D
-  - '30000'
-  - VLESS-193.163.203.170 443
-  - VLESS-51.24.93.21 22222
-  - VLESS-89.105.195.150 443
-  - '2064'
-  - VLESS-51.200.19.243 22224
-  - 443-1N
-  - VLESS-140.225.209.131 11443-1A
-  - '1230'
-  - 8080-1F
-  - VLESS-5.175.171.30 8444
-  - VLESS-13.43.176.3 22224
-  - 15.204.233.41 8882
-  - VLESS-169.40.42.202 443
-  - 8080-1C
-  - 51.83.61.102 8080
-  - VLESS-185.215.184.50 443
-  - VLESS-95.182.93.43 443
-  - 443-1S
-  - VLESS-94.184.37.198 18409-1C
-  - '2096'
-  - VLESS-104.171.133.209 443
-  - VLESS-178.214.125.2 443
-  - '8880'
-  - VLESS-50.7.227.78 443
-  - VLESS-51.158.206.98 23576
-  - VLESS-178.172.227.124 14430
-  - 79.127.139.242 19999
-  - 146.75.57.7 443
-  - 80-1B
-  - VLESS-46.33.8.254 443
-  - VLESS-185.215.184.86 443
-  - '1099'
-  - VLESS-5.231.45.196 443
-  - '9365'
-  - VLESS-193.188.21.253 14430
-  - VLESS-94.184.37.198 18409-1A
-  - VLESS-169.40.42.89 443
-  - VLESS-163.172.214.188 80
-  - 443-1P
-  - VLESS-3.168.218.14 443
-  - VLESS-188.137.178.174 8443
-  - VLESS-51.38.71.147 8443
-  - VLESS-151.241.226.201 2053
-  - VLESS-3.168.217.190 443
-  - '4443'
-  - 8080-1B
-  - VLESS-94.184.37.198 18409-1B
-  - VLESS-188.130.209.212 443
-  - 443-1B
-  - VLESS-13.143.172.78 8443
-  - 443-1O
-  - 23.162.152.22 19999
-  - VLESS-141.227.160.61 8443
-  - VLESS-104.27.2.172 80
-  - VLESS-152.228.139.33 35108
-  - VLESS-172.64.158.146 8880
-  - FREAKCONFIG 3
-  - VLESS-91.107.255.63 39653
-  - VLESS-89.105.218.132 443
-  - VLESS-185.207.197.12 80
-  - 94.156.250.148 7001
-  - 443-1J
-  - VLESS-201.51.11.65 443
-  - '1155'
-  - VLESS-18.132.237.193 22223
-  - VLESS-195.206.235.74 443
-  - '8099'
-  - '46539'
-  - VLESS-87.120.252.67 443
-  - 216.238.104.154 443
-  - VLESS-140.225.209.131 11443-1B
-  - 443-1R
-  - VLESS-195.110.15.17 43000
-  - VLESS-185.126.93.225 443
-  - 167.82.64.7 443
-  - VLESS-172.64.229.170 80
-  - VLESS-198.16.113.222 8443
-  - VLESS-5.230.219.109 8444
-  - 8080-1A
-  - FREAKCONFIG 2
-  - 443-1W
-  - '4530'
-  - 173.244.56.6 443
-  - 80-1A
-  - 443-1X
-  - '8443'
+  - 216.152.147.201 443
+  - 156.146.38.167 443
+  - VLESS-195.206.235.48 443
+  - FREAKCONFIG
+  - 38.91.107.188 19999
+  - 15.204.246.108 8881
+  - VLESS-188.116.27.6 443
   - 23.230.52.119 42878
-  - 70.34.212.124 8388
-  - 443-1A
-  - VLESS-147.45.66.60 43000
-  - 185.22.153.117 18443
-  - VLESS-51.158.206.25 23576
-  - 443-1L
-  - 193.151.163.18 19999
-  - VLESS-168.100.9.41 16386
-  - 64.188.79.139 2084
-  - 443-1G
-  - VLESS-51.24.104.155 22224
-  - 8080-1E
-  - 443-1H
-  - 443-1E
-  - 443-1F
-  - VLESS-170.114.45.6 2096
-  - 136.243.249.198 443
-  - VLESS-104.26.12.227 2096
-  - FREAKCONFIG-1A
-  - ZIBANABZ-1B
-  - 82.38.31.206 8080
-  - VLESS-13.43.176.3 22222
-  - '1315'
-  - 443-1K
-  - VLESS-31.7.60.250 443
-  - VLESS-85.9.114.39 2087
-  - VLESS-104.21.70.21 8080
-  - VLESS-79.141.164.83 443
-  - '6443'
-  - 158.247.253.243 443
-  - '3174'
-  - 443-1T
-  - 54.37.240.40 8080
-  - 8080-1D
-  - VLESS-88.218.42.115 443
-  - 199.232.78.160 443
-  - VLESS-13.143.185.22 6443
-  - VLESS-94.184.37.198 18409-1D
-  - 104.25.239.113 2053
-  - VLESS-150.40.126.22 443
-  - '39695'
-  - '2099'
-  - 82.38.31.162 443
-  - VLESS-185.147.27.23 2083
-  - 443-1I
-  - 66.163.112.121 443
-  - 443-1Q
-  - 443-1U
-  - '2053'
-  - VLESS-144.31.140.125 8443
-  - VLESS-96.62.224.129 444
-  - '2087'
-  - 177.202.64.67 1080
-  - VLESS-46.250.254.187 443
+  - VLESS-50.7.227.78 443
+  - VLESS-89.105.195.151 443
   - 443-1M
+  - 443-1O
+  - 443-1A
+  - VLESS-147.45.42.73 20443
+  - VLESS-89.105.218.143 443
+  - 54.37.240.40 8080
+  - 443-1F
+  - 443-1C
+  - 193.151.163.18 19999
+  - 82.38.31.187 8080
+  - VLESS-172.64.88.98 443
+  - VLESS-172.67.173.89 443
+  - VLESS-103.228.168.182 443
+  - VLESS-51.75.118.18 20113
+  - '8081'
+  - VLESS-67.159.52.81 443
+  - VLESS-104.171.133.209 443
+  - VLESS-82.146.42.160 2058
+  - VLESS-172.64.149.54 443
+  - VLESS-188.114.97.6 443
+  - VLESS-185.147.27.23 2083
+  - VLESS-172.64.150.28 443
+  - 82.38.31.155 8080
+  - '1040'
+  - VLESS-51.24.104.155 22224
+  - '1030'
+  - 443-1I
+  - 82.38.31.35 8080
+  - 216.152.155.23 443
+  - VLESS-94.183.234.245 443
+  - '80'
+  - VLESS-198.16.113.222 8443
+  - 188.114.97.80 443
+  - 443-1B
+  - VLESS-15.237.224.161 22224
+  - 104.25.239.113 2053
+  - VLESS-79.182.39.131 443
   - ZIBANABZ-1A
-  - VLESS-92.119.165.51 6443
+  - VLESS-104.18.1.1 2053
+  - 82.38.31.184 8080
+  - VLESS-188.130.209.212 443
+  - 172.111.38.72 19999
+  - 38.91.100.39 19999
+  - VLESS-23.95.115.116 2053
+  - VLESS-146.75.59.186 443
+  - VLESS-37.221.76.116 2091
+  - VLESS-138.124.70.41 14430
+  - 443-1L
+  - VLESS-5.231.28.130 443
+  - 66.163.112.121 443
+  - VLESS-157.22.185.68 2058
+  - VLESS-185.126.93.225 443
+  - 15.204.233.41 8882
+  - VLESS-131.123.43.103 443
+  - 443-1J
+  - VLESS-193.160.208.137 443
+  - VLESS-46.250.242.104 443
+  - '2064'
+  - 51.79.85.185 8118
+  - 152.53.1.57 8388
+  - 443-1K
+  - 443-1G
+  - ZIBANABZ-1B
+  - 82.38.31.217 8080
+  - VLESS-195.206.235.74 443
+  - 82.38.31.203 8080
+  - VLESS-13.143.167.154 443
+  - 167.17.64.27 19999
+  - VLESS-173.245.58.75 443
+  - 173.244.56.9 443
+  - VLESS-162.159.43.187 2086
+  - '2053'
+  - VLESS-185.215.184.50 443
+  - 66.163.127.44 443
+  - VLESS-134.185.81.5 47881
+  - VLESS-188.137.178.174 8443
+  - VLESS-46.250.254.187 443
+  - VLESS-62.210.91.2 23576
+  - '29813'
+  - VLESS-169.40.42.202 443
+  - 443-1H
+  - VLESS-104.18.178.116 443
+  - VLESS-109.172.114.57 2058
+  - '2086'
+  - VLESS-152.228.139.33 35108
+  - VLESS-169.40.42.90 443
+  - 38.128.66.32 19999
+  - VLESS-45.90.59.15 443
+  - 154.36.158.197 8388
+  - 202.50.253.81 19999
+  - VLESS-104.19.173.68 8080
+  - '8880'
+  - ZIBANABZ-1C
+  - VLESS-46.250.250.149 2053
+  - VLESS-185.215.184.86 443
+  - '8080'
+  - '1260'
+  - VLESS-198.16.113.221 8443
+  - '2096'
+  - VLESS-51.158.206.8 23576
+  - VLESS-95.129.234.113 8443
+  - VLESS-151.241.226.201 2053
+  - VLESS-82.152.132.74 443
+  - '20123'
+  - 158.173.20.208 443
+  - VLESS-164.37.111.78 8080
+  - VLESS-43.161.193.181 443
+  - 443-1D
+  - VLESS-54.46.72.234 8030
+  - 443-1N
+  - 443-1E
+  - VLESS-95.216.27.15 2053
+  - VLESS-172.67.213.218 2096
   type: select
 rules:
 - MATCH,🌐 Proxy
