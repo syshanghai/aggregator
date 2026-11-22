@@ -431,3 +431,20 @@
 2026-11-22 13:43:02 push.py [line:83] INFO: [PushSuccess] push subscribes information to gist successed, group=[free::singbox]
 2026-11-22 13:43:03 push.py [line:83] INFO: [PushSuccess] push subscribes information to gist successed, group=[free::v2ray]
 2026-11-22 13:43:03 process.py [line:309] INFO: group [free] process finished, count: 12, cost: 19.22s
+2026-11-22 22:55:10 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_telegram_pages] finished, count: 2, cost: 1.04s
+2026-11-22 22:55:11 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [_crawl_telegram_page] finished, count: 6, cost: 1.10s
+2026-11-22 22:55:11 telegram.py [line:45] INFO: [TelegramCrawl] finished crawl from Telegram, found 0 subscriptions, cost: 2.14s
+2026-11-22 22:55:11 engine.py [line:276] INFO: [CrawlInfo] crawl finished, found 1 sites
+2026-11-22 22:55:11 process.py [line:198] INFO: start fetch all subscriptions, count: [1]
+2026-11-22 22:55:11 workflow.py [line:61] INFO: start fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]
+2026-11-22 22:55:12 airport.py [line:841] INFO: subconverter completed, artifact: [crawled-nodes-Y8A-uri]	success=[True]
+2026-11-22 22:55:12 workflow.py [line:95] INFO: finished fetch proxy: name=[crawled-nodes]	id=[-1]	domain=[]	count=[159]
+2026-11-22 22:55:12 utils.py [line:580] INFO: [Concurrent] multi-process concurrent execute [executewrapper] finished, count: 1, cost: 0.71s
+2026-11-22 22:55:12 pipeline.py [line:173] INFO: startup clash now, workspace: /home/runner/work/aggregator/aggregator/clash, config: config.yaml
+2026-11-22 22:55:12 pipeline.py [line:175] INFO: clash start success, begin check proxies, group: free	count: 142
+2026-11-22 22:55:22 utils.py [line:624] INFO: [Concurrent] multi-threaded execute [check] finished, count: 142, cost: 5.39s
+2026-11-22 22:55:22 pipeline.py [line:188] INFO: proxies check finished, total: 142, alive: 24, dead: 118
+2026-11-22 22:55:23 push.py [line:83] INFO: [PushSuccess] push subscribes information to gist successed, group=[free::clash]
+2026-11-22 22:55:24 push.py [line:83] INFO: [PushSuccess] push subscribes information to gist successed, group=[free::singbox]
+2026-11-22 22:55:25 push.py [line:83] INFO: [PushSuccess] push subscribes information to gist successed, group=[free::v2ray]
+2026-11-22 22:55:25 process.py [line:309] INFO: group [free] process finished, count: 24, cost: 12.88s
